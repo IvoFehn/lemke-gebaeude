@@ -22,6 +22,28 @@ const ServiceHero = (props: Props) => {
           </button>
         </div>
       </div>
+      <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center gap-4 bg-colorSecondary  max-w-fit p-16 rounded-xl -translate-y-24">
+          <h3 className="text-2xl font-bold pr-8">
+            Online <br></br> Appointment
+          </h3>
+          <input className="rounded-xl p-3" placeholder="Fullname" />
+          <input className="rounded-xl p-3" placeholder="Phone No." />
+          <select
+            name="pets"
+            placeholder="Service Name"
+            className="rounded-xl p-3"
+          >
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+          </select>
+          <button className="bg-colorPrimary p-5 rounded-xl flex justify-center items-center uppercase">
+            <span className="pr-2">Submit now</span>
+            <BsArrowRight />
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
