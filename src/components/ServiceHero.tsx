@@ -1,11 +1,12 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import ServicesOptions from "./ServicesOptions";
 
 type Props = {};
 
 const ServiceHero = (props: Props) => {
   return (
-    <div className="h-[700px]">
+    <div className="bg-colorBackgroundLightGrey">
       <div className="bg-[url('/scroll-bg.jpg')] h-[600px] w-full rounded-b-[50%] bg-fixed bg-no-repeat bg-center bg-cover relative">
         <div className="bg-colorPrimary opacity-60 h-[600px] w-full rounded-b-[50%] "></div>
         <div className="w-full h-full text-white absolute top-0 left-0 z-10 flex items-center pt-32 flex-col">
@@ -43,6 +44,9 @@ const ServiceHero = (props: Props) => {
             <BsArrowRight />
           </button>
         </div>
+      </div>
+      <div>
+        <ServicesOptions />
       </div>
     </div>
   );

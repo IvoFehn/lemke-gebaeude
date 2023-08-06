@@ -6,3 +6,5 @@ export const colorSecondary = "#005F9A";
 export const colorText = "#848484";
 export const colorAccent = "#90C824";
 export const colorElementor = "#56A3CF";
+export const colorBackgroundLightGrey = "#FBFBFB";
+export const colorBorderLightGrey = "#f5f5f5";
