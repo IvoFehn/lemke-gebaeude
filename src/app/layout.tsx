@@ -1,4 +1,3 @@
-"use client";
 import ContactInfo from "@/components/ConactInfo";
 import "./globals.css";
 import type { Metadata } from "next";
