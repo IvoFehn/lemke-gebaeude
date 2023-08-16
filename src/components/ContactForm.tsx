@@ -68,8 +68,8 @@ const ContactForm = (props: Props) => {
       )
       .then(
         (result) => {
-          const oneHour = 60 * 60 * 1000; // Eine Stunde in Millisekunden
-          cookies().set("message_already_sent", "true", {
+          const oneHour = 60 * 60 * 1000;
+          cookieStore.set("message_already_sent", "true", {
             expires: Date.now() + oneHour,
           });
           setButtonMessage("Message Sent");
