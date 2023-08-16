@@ -1,12 +1,14 @@
 "use client";
 import ContactInfo from "@/components/ConactInfo";
 import "./globals.css";
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import HeaderNavigation from "@/components/HeaderNavigation";
 import HeroCarousel from "@/components/HeroCarousel";
 import ElementorComponent from "@/components/ElementorComponent";
 import AboutUs from "@/components/AboutUs";
 import ServicveHero from "@/components/ServiceHero";
+import ContactOptions from "@/components/ContactOptions";
+import TestimonialsComponent from "@/components/TestimonialsComponent";
 
 // export const metadata: Metadata = {
 //   title: "Lemke - Gebäudereinigung",
@@ -29,6 +31,8 @@ export default function RootLayout({
           <AboutUs />
         </section>
         <ServicveHero />
+        <TestimonialsComponent />
+        <ContactOptions />
       </body>
     </html>
   );
