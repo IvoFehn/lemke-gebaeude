@@ -39,7 +39,7 @@ const ContactOptions = (props: Props) => {
             </div>
           </a>
           <a
-            href="tel:0172747237"
+            href="mailto:info@lemke.com"
             className="text-colorText border-colorBorderLightGrey border-solid border-2 flex p-5 rounded-2xl shadow-md w-3/4"
           >
             <div className="flex items-center w-full">

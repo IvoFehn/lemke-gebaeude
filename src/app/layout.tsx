@@ -9,6 +9,7 @@ import AboutUs from "@/components/AboutUs";
 import ServicveHero from "@/components/ServiceHero";
 import ContactOptions from "@/components/ContactOptions";
 import TestimonialsComponent from "@/components/TestimonialsComponent";
+import FooterComponent from "@/components/FooterComponent";
 
 // export const metadata: Metadata = {
 //   title: "Lemke - Gebäudereinigung",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <ServicveHero />
         <TestimonialsComponent />
         <ContactOptions />
+        <FooterComponent />
       </body>
     </html>
   );

@@ -1,6 +1,8 @@
 # Lemke Gebäudereinigung
 
-This project was made for a friend company. It's made from scratch by me.  
+Due to the voluntary nature of this website's creation, and in the absence of a dedicated budget, extensive efforts towards reusable components and a robust architectural structure were not pursued. Potential enhancements and optimizations may be considered in forthcoming updates.
+
+Regarding the ContactForm functionality, EmailJS was employed, bolstered by a fundamental security timestamp implementation, fortifying the system against spam. It is anticipated that further measures, such as implementing a captcha, may be incorporated into the solution at a later stage.
 
 ## NextJS Instructions
 
