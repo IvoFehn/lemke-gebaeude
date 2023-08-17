@@ -1,9 +1,23 @@
 "use client";
 
-import React, { FormEvent, useRef } from "react";
+import React, { FormEvent, useEffect, useRef, useState } from "react";
 import isValidEmail from "@/utils/emailValidate";
 import emailjs from "@emailjs/browser";
-import { cookies } from "next/headers";
+
+const checkLocalStorage = (blockMessage: string | null = null) => {
+  if (blockMessage) {
+    try {
+      const parsedItem = JSON.parse(blockMessage);
+      const expires = parsedItem.expires;
+
+      if (typeof expires === "number" && Date.now() > expires) {
+        localStorage.removeItem("blockMessage");
+      }
+    } catch (error) {
+      console.error("Error parsing or processing blockMessage:", error);
+    }
+  }
+};
 
 type Props = {};
 
@@ -17,6 +31,7 @@ const ContactForm = (props: Props) => {
   });
   const [buttonMessage, setButtonMessage] =
     React.useState<string>("Send Message");
+  const [showErrorMessage, setShowErrorMessag] = useState<string>("");
 
   const allValid = () => {
     return (
@@ -27,10 +42,33 @@ const ContactForm = (props: Props) => {
     );
   };
 
+  useEffect(() => {
+    checkLocalStorage();
+    const intervalId = setInterval(() => {
+      checkLocalStorage();
+    }, 60000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
   const submitHandler = (event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
-    const cookieStore = cookies();
-    const blockCookie = cookieStore.get("message_already_sent");
+    const blockMessage = localStorage.getItem("blockMessage");
+    const expires = JSON.parse(blockMessage || "{}").expires;
+
+    const expirationDate = new Date(expires);
+    expirationDate.setMinutes(expirationDate.getMinutes() + 1);
+    const localExpirationDate = expirationDate.toLocaleString();
+    checkLocalStorage(blockMessage);
+    if (blockMessage) {
+      setShowErrorMessag(
+        `Es wurde bereits eine Nachricht vor kurzem versendet. Bitte warten sie bis ${localExpirationDate} bis Sie die nächste Nachricht versenden können. `
+      );
+      return;
+    }
+
     const fullname = formRef.current?.fullname.value;
     const phone_no = formRef.current?.phone_no.value;
     const email = formRef.current?.email.value;
@@ -53,7 +91,7 @@ const ContactForm = (props: Props) => {
       messageValidation: message.length < 500 && message.length > 20,
     }));
 
-    if (!allValid || blockCookie) {
+    if (!allValid) {
       return;
     }
     if (!formRef.current) {
@@ -69,9 +107,11 @@ const ContactForm = (props: Props) => {
       .then(
         (result) => {
           const oneHour = 60 * 60 * 1000;
-          cookieStore.set("message_already_sent", "true", {
+          const storageStingifyItem = JSON.stringify({
+            type: "message_already_sent",
             expires: Date.now() + oneHour,
           });
+          localStorage.setItem("blockMessage", storageStingifyItem);
           setButtonMessage("Message Sent");
         },
         (error) => {
@@ -134,6 +174,9 @@ const ContactForm = (props: Props) => {
         value={buttonMessage.toUpperCase()}
         className="bg-colorPrimary w-64 p-3 mt-3 rounded-2xl cursor-pointer hover:bg-white hover:text-colorPrimary font-semibold transition duration-500 ease-in-out"
       ></input>
+      {showErrorMessage && (
+        <span className="text-white text-sm">{showErrorMessage}</span>
+      )}
     </form>
   );
 };
