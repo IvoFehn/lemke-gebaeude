@@ -9,7 +9,7 @@ type Props = {};
 const FooterComponent = (props: Props) => {
   return (
     <footer className=" bg-colorSecondary">
-      <div className="mx-auto 4k:px-[20vw] xl:px-0 flex text-white pt-32 pb-16 gap-8 lg:flex-col lg:items-center lg:justify-center">
+      <div className="4k:px-[20vw] xl:px-0 flex text-white pt-32 pb-16 gap-8 lg:flex-col lg:px-16 lg:justify-center">
         <div className="basis-1/3 flex gap-4 flex-col">
           <Image
             src={"/lemke-logo.jpg"}
