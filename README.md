@@ -4,6 +4,9 @@ Due to the voluntary nature of this website's creation, and in the absence of a 
 
 Regarding the ContactForm functionality, EmailJS was employed, bolstered by a fundamental security timestamp implementation, fortifying the system against spam. It is anticipated that further measures, such as implementing a captcha, may be incorporated into the solution at a later stage.
 
+✅ Optimized for Mobile
+✅ Optimized for Screens up to 2k resolution
+
 ## NextJS Instructions
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
