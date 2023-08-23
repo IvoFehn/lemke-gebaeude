@@ -14,13 +14,13 @@ type Props = {};
 const ServicesOptions = (props: Props) => {
   return (
     <div className="w-full flex justify-center items-center text-colorText flex-col">
-      <h6 className="text-colorSecondary text-xl font-bold pb-4">
+      <h6 className="text-colorSecondary text-xl font-bold pb-4 text-center">
         Our Popular Services
       </h6>
-      <h2 className="text-colorSecondary text-6xl font-bold pb-8">
+      <h2 className="text-colorSecondary text-6xl  sm:text-4xl font-bold pb-8 text-center">
         Our Most Popular Cleaning Services
       </h2>
-      <div className="overflow-hidden flex flex-wrap gap-12 justify-center items-center pt-8 pb-32 ">
+      <div className="overflow-hidden flex flex-wrap sm:flex-col gap-12 justify-center items-center pt-8 pb-32 ">
         <div className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
           <LiaBrushSolid
             style={{

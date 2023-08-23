@@ -4,13 +4,12 @@ import {
   AiOutlineClockCircle,
   AiOutlineMail,
 } from "react-icons/ai";
-import { colorPrimary } from "../common/colors";
 
 type Props = {};
 
 const ContactInfo = (props: Props) => {
   return (
-    <div className="min-w-full bg-colorPrimary min-h-min text-sm ">
+    <div className=" bg-colorPrimary min-h-min text-sm sm:hidden">
       <ul className="list-none p-2 items-center gap-2 container mx-auto flex justify-end ">
         <li className="flex items-center gap-2">
           <AiFillPhone color="white" />

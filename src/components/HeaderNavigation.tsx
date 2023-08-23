@@ -13,7 +13,7 @@ const HeaderNavigation = (props: Props) => {
         alt="Lemke Gebäuidereinigung Logo"
         className="m-3"
       />
-      <ul className="list-none flex gap-6 text-colorSecondary font-bold ">
+      <ul className="list-none flex gap-6 text-colorSecondary font-bold md:hidden">
         <li className="flex items-center gap-2">Startseite</li>
         <li className="flex items-center gap-2">Leistungen</li>
         <li className="flex items-center gap-2">Über Uns</li>
