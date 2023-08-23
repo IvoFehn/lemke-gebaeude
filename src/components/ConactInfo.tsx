@@ -9,7 +9,7 @@ type Props = {};
 
 const ContactInfo = (props: Props) => {
   return (
-    <div className=" bg-colorPrimary min-h-min text-sm container md:hidden">
+    <div className=" bg-colorPrimary min-h-min text-sm 2xl:px-[48rem] lg:hidden">
       <ul className="list-none p-2 items-center gap-2 container mx-auto flex justify-end ">
         <li className="flex items-center gap-2">
           <AiFillPhone color="white" />

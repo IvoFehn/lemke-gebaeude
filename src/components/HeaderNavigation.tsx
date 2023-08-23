@@ -5,7 +5,7 @@ type Props = {};
 
 const HeaderNavigation = (props: Props) => {
   return (
-    <div className="container mx-auto flex justify-between">
+    <div className="4k:px-[20vw] xl:px-0 mx-auto flex justify-between">
       <Image
         src="/lemke-logo.jpg"
         width={110}
@@ -13,7 +13,7 @@ const HeaderNavigation = (props: Props) => {
         alt="Lemke Gebäuidereinigung Logo"
         className="m-3"
       />
-      <ul className="list-none flex gap-6 text-colorSecondary font-bold md:hidden">
+      <ul className="list-none flex gap-6 text-colorSecondary font-bold lg:hidden">
         <li className="flex items-center gap-2">Startseite</li>
         <li className="flex items-center gap-2">Leistungen</li>
         <li className="flex items-center gap-2">Über Uns</li>

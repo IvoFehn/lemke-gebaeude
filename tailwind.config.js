@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     screens: {
+      "8k": { max: "7679px" }, // 8K Monitors
+      "4k": { max: "3839px" }, // 4K Monitors
+      "2k": { max: "2047px" }, // 2K Monitors
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
 
