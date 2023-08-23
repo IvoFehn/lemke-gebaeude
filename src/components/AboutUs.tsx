@@ -9,9 +9,9 @@ type Props = {};
 
 const AboutUs = (props: Props) => {
   return (
-    <div className="mt-5  container mx-auto flex sm:flex-col">
+    <div className="mt-5 container mx-auto flex md:flex-col ">
       <div className="basis-1/2 w-full">
-        <div className="flex items-center justify-center sm:px-4">
+        <div className="flex items-center justify-center md:px-4">
           <Image
             src="/service-picture.jpg"
             alt="Some photo"
@@ -22,30 +22,30 @@ const AboutUs = (props: Props) => {
         </div>
         <div
           id="countup-component"
-          className="grid grid-cols-2 text-colorSecondary px-2 gap-4 -translate-y-12"
+          className="grid grid-cols-2 text-colorSecondary md:px-2 gap-4 -translate-y-12"
         >
-          <div className="flex flex-col items-center justify-center sm:text-center bg-white shadow-lg rounded-xl p-4">
+          <div className="flex flex-col items-center justify-center md:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
               countUpTo={560}
               styles="text-xl  text-6xl font-bold text-colorText pb-2"
             />
             <p className="font-semibold text-lg">Projects Completed</p>
           </div>
-          <div className="flex flex-col items-center justify-center sm:text-center bg-white shadow-lg rounded-xl p-4">
+          <div className="flex flex-col items-center justify-center md:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
               countUpTo={850}
               styles="text-xl  text-6xl block font-bold text-colorText pb-2"
             />
             <p className="font-semibold text-lg">Dedicated Cleaner</p>
           </div>
-          <div className="flex flex-col items-center justify-center sm:text-center bg-white shadow-lg rounded-xl p-4">
+          <div className="flex flex-col items-center justify-center md:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
               countUpTo={920}
               styles="text-xl  text-6xl block font-bold text-colorText pb-2"
             />
             <p className="font-semibold text-lg">Satisfied Customer</p>
           </div>
-          <div className="flex flex-col items-center justify-center sm:text-center bg-white shadow-lg rounded-xl p-4">
+          <div className="flex flex-col items-center justify-center md:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
               countUpTo={450}
               styles="text-xl text-6xl block font-bold text-colorText pb-2"
@@ -55,7 +55,7 @@ const AboutUs = (props: Props) => {
         </div>
       </div>
       <div className="basis-1/2 w-full h-full">
-        <div className="sm:flex sm:justify-center sm:items-center sm:flex-col sm:px-4 sm:text-center">
+        <div className="md:flex md:justify-center md:items-center md:flex-col md:px-4 md:text-center">
           <h6 className="text-colorSecondary text-xl font-semibold pb-3">
             About us
           </h6>
@@ -70,7 +70,7 @@ const AboutUs = (props: Props) => {
             Lorem ipsum dolor sit amet.
           </p>
         </div>
-        <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 sm:flex sm:justify-center sm:items-center sm:flex-col sm:px-4 sm:text-center">
+        <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 md:flex md:justify-center md:items-center md:flex-col md:px-4 md:text-center">
           <GiVacuumCleaner
             style={{
               fontSize: "4rem",
@@ -89,7 +89,7 @@ const AboutUs = (props: Props) => {
             Lorem ipsum dolor sit amet.
           </p>
         </div>
-        <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 sm:flex sm:justify-center sm:items-center sm:flex-col sm:px-4 sm:text-center">
+        <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 md:flex md:justify-center md:items-center md:flex-col md:px-4 md:text-center">
           <GiMagicBroom
             style={{
               fontSize: "4rem",
@@ -108,7 +108,7 @@ const AboutUs = (props: Props) => {
             Lorem ipsum dolor sit amet.
           </p>
         </div>
-        <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 sm:flex sm:justify-center sm:items-center sm:flex-col sm:px-4 sm:text-center">
+        <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 md:flex md:justify-center md:items-center md:flex-col md:px-4 md:text-center">
           <LiaIndustrySolid
             style={{
               fontSize: "4rem",

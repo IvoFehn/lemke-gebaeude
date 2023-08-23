@@ -9,7 +9,7 @@ type Props = {};
 const FooterComponent = (props: Props) => {
   return (
     <footer className=" bg-colorSecondary">
-      <div className="mx-auto container flex text-white pt-32 pb-16 gap-8">
+      <div className="mx-auto container flex text-white pt-32 pb-16 gap-8 md:flex-col md:items-center md:justify-center">
         <div className="basis-1/3 flex gap-4 flex-col">
           <Image
             src={"/lemke-logo.jpg"}
@@ -55,7 +55,7 @@ const FooterComponent = (props: Props) => {
           </ul>
         </div>
       </div>
-      <div className="container mx-auto flex items-center justify-end w-full rounded-md">
+      <div className="container mx-auto flex items-center justify-end rounded-md">
         <a
           className="flex p-5 underline hover:text-colorText"
           href="https://github.com/IvoFehn"

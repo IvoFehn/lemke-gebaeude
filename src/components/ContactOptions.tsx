@@ -8,14 +8,16 @@ type Props = {};
 const ContactOptions = (props: Props) => {
   return (
     <section className="container mx-auto mb-16">
-      <div className="text-colorPrimary flex justify-center items-center flex-col pb-12 pt-16">
+      <div className="text-colorPrimary flex justify-center items-center flex-col pb-12 pt-16 md:flex-col md: text-center">
         <h4 className="text-2xl font-semibold text-colorSecondary">
           Get Free Estimate
         </h4>
-        <h2 className="text-6xl font-semibold">Don’t Hesitate To Contact</h2>
+        <h2 className="text-6xl font-semibold md:pt-4">
+          Don’t Hesitate To Contact
+        </h2>
       </div>
-      <div className="flex gap-6 ">
-        <div className="basis-1/2 flex gap-8 flex-col justify-center items-end">
+      <div className="flex gap-6 md:flex-col">
+        <div className="basis-1/2 flex gap-8 flex-col justify-center items-end md:items-center md:gap-4">
           <a
             href="tel:0172747237"
             className="text-colorText border-colorBorderLightGrey border-solid border-2 flex p-5 rounded-2xl shadow-md w-3/4"
@@ -61,7 +63,7 @@ const ContactOptions = (props: Props) => {
             </div>
           </a>
         </div>
-        <div className="basis-1/2 w-full ">
+        <div className="basis-1/2 w-full md:flex md:justify-center md:items-center">
           <ContactForm />
         </div>
       </div>

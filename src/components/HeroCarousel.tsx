@@ -14,7 +14,7 @@ const HeroCarousel = (props: Props) => {
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       <div className="absolute top-0 bottom-0 w-full h-full bg-colorSecondary opacity-40 "></div>
       <div className="absolute top-0 bottom-0 w-full h-full flex items-center justify-center">
-        <h2 className="text-7xl sm:text-3xl sm:text-center">
+        <h2 className="text-7xl md:text-3xl md:text-center">
           Reliable Cleaning Agency With Best Equipment
         </h2>
       </div>

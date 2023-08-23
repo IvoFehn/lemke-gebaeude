@@ -45,7 +45,10 @@ export default function TestimonialsSlider({
     <div className="w-full max-w-3xl mx-auto text-center">
       {/* Testimonial image */}
       <div className="relative h-32">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] pointer-events-none before:absolute before:inset-0 before:bg-gradient-to-b before:from-colorSecondary/25 before:via-colorSecondary/5 before:via-25% before:to-colorSecondary/0 before:to-75% before:rounded-full before:-z-10">
+        <div
+          className="md:overflow-hidden
+         absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] pointer-events-none before:absolute before:inset-0 before:bg-gradient-to-b before:from-colorSecondary/25 before:via-colorSecondary/5 before:via-25% before:to-colorSecondary/0 before:to-75% before:rounded-full before:-z-10"
+        >
           <div className="h-32 [mask-image:_linear-gradient(0deg,transparent,theme(colors.white)_20%,theme(colors.white))]">
             {testimonials.map((testimonial, index) => (
               <Transition
