@@ -35,6 +35,19 @@
   opacity: 60%;
 }
 
+.testimonial-image {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+@media (max-width: 1279px) {
+  .testimonial-image {
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-radius: 1rem;
+  }
+}
+
 .embla {
   --slide-spacing: 1rem;
   --slide-size: 100%;
