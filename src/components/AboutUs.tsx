@@ -9,7 +9,7 @@ type Props = {};
 
 const AboutUs = (props: Props) => {
   return (
-    <div className="mt-5 4k:px-[20vw] xl:px-0 mx-auto flex lg:flex-col ">
+    <div className="mt-5 4k:px-[20vw] xl:px-0 mx-auto flex lg:flex-col gap-12">
       <div className="basis-1/2 w-full">
         <div className="flex items-center justify-center lg:px-4">
           <Image
@@ -22,7 +22,7 @@ const AboutUs = (props: Props) => {
         </div>
         <div
           id="countup-component"
-          className="grid grid-cols-2 text-colorSecondary lg:px-2 gap-4 -translate-y-12"
+          className="grid grid-cols-2 text-colorSecondary gap-4 4k:-translate-y-32 4k:p-12 lg:-translate-y-12 lg:py-0 lg:px-2"
         >
           <div className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
