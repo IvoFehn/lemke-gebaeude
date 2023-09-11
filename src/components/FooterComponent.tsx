@@ -22,36 +22,27 @@ const FooterComponent = (props: Props) => {
             <FiMail />
             test@test.de
           </a>
-          <a href="tel:1234324523" className="flex items-center gap-2">
-            <FiPhone /> <span>647823784328</span>
-          </a>
-          <a
-            href="geo:37.7749,-122.4194?q=37.7749,-122.4194(San Francisco)"
-            className="flex items-center gap-2"
-          >
-            <CiLocationOn />
-            <span> Anfahrt</span>
+          <a href="tel:05117900900" className="flex items-center gap-2">
+            <FiPhone /> <span>0511 / 7-900-900</span>
           </a>
         </div>
         <div className="basis-1/3 flex gap-4 flex-col">
           <h4 className="border-b-2 mb-4 pb-2 text-xl">Quick Links</h4>
           <ul className=" flex gap-2 flex-col">
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Our Services</li>
-            <li>Privacy Policy</li>
-            <li>Terms of Use</li>
+            <li>Über uns</li>
+            <li>Kontakt</li>
+            <li>Unser Service</li>
           </ul>
         </div>
         <div className="basis-1/3">
-          <h4 className="border-b-2 mb-4 pb-2 text-xl">Our Service</h4>
+          <h4 className="border-b-2 mb-4 pb-2 text-xl">Unser Service</h4>
           <ul className=" flex gap-2 flex-col">
-            <li>Carpet Cleaning</li>
-            <li>House Cleaning</li>
-            <li>Window Cleaning</li>
-            <li>Kitchen Cleaning</li>
-            <li>Park Cleaning</li>
-            <li>Furniture Cleaning</li>
+            <li>Sanitäranlagen </li>
+            <li>Büro</li>
+            <li>Aussenbereich</li>
+            <li>Kleinreparaturen</li>
+            <li>Fenster </li>
+            <li>Events</li>
           </ul>
         </div>
       </div>

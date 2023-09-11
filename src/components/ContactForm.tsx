@@ -30,7 +30,7 @@ const ContactForm = (props: Props) => {
     messageValidation: false,
   });
   const [buttonMessage, setButtonMessage] =
-    React.useState<string>("Send Message");
+    React.useState<string>("Nachricht senden");
   const [showErrorMessage, setShowErrorMessag] = useState<string>("");
 
   const allValid = () => {
@@ -112,7 +112,7 @@ const ContactForm = (props: Props) => {
             expires: Date.now() + oneHour,
           });
           localStorage.setItem("blockMessage", storageStingifyItem);
-          setButtonMessage("Message Sent");
+          setButtonMessage("Nachricht versendet");
         },
         (error) => {
           setButtonMessage("Error");
@@ -132,7 +132,7 @@ const ContactForm = (props: Props) => {
         type="text"
         name="fullname"
         id="fullname"
-        placeholder="Fullname"
+        placeholder="Name"
         maxLength={100}
         className={`text-colorText rounded-tl-2xl rounded-br-2xl p-3 w-full ${
           !validations.fullnameValidation && "border-2 border-red-500"
@@ -142,7 +142,7 @@ const ContactForm = (props: Props) => {
         type="number"
         name="phone_no"
         id="phone_no"
-        placeholder="Phone No."
+        placeholder="Telefonnummer"
         maxLength={13}
         className={`text-colorText rounded-tl-2xl rounded-br-2xl p-3 w-full ${
           !validations.phone_noValidation && "border-2 border-red-500"
@@ -164,7 +164,7 @@ const ContactForm = (props: Props) => {
         rows={5}
         minLength={20}
         maxLength={500}
-        placeholder="Message"
+        placeholder="Nachricht"
         className={`text-colorText rounded-tl-2xl rounded-br-2xl p-3 w-full ${
           !validations.messageValidation && "border-2 border-red-500"
         }`}

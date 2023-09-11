@@ -13,8 +13,8 @@ const ContactInfo = (props: Props) => {
       <ul className="list-none p-2 items-center gap-2 container mx-auto flex justify-end ">
         <li className="flex items-center gap-2">
           <AiFillPhone color="white" />
-          <a href="tel:123-456-7890" className="no-underline">
-            <span>123-456-7890</span>
+          <a href="tel:05117900900" className="no-underline">
+            <span>0511 / 7-900-900</span>
           </a>
         </li>
         <li className="flex items-center gap-2">
@@ -25,7 +25,7 @@ const ContactInfo = (props: Props) => {
         </li>
         <li className="flex items-center gap-2">
           <AiOutlineClockCircle color="white" />
-          <span>Mon - Fri: 9:00 - 18:30</span>
+          <span>Mo - Fr: 6:00 - 18:00</span>
         </li>
       </ul>
     </div>

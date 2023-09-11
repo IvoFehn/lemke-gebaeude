@@ -1,8 +1,6 @@
-import {
-  AiOutlineClockCircle,
-  AiOutlineShoppingCart,
-  AiOutlineStar,
-} from "react-icons/ai";
+import { AiOutlineClockCircle, AiOutlineShoppingCart } from "react-icons/ai";
+
+import { PiBinoculars } from "react-icons/pi";
 
 import React from "react";
 
@@ -33,7 +31,7 @@ const ElementorComponent = (props: Props) => {
           </p>
         </div>
         <div className="w-1/3 h-full flex flex-col justify-center bg-colorPrimary rounded-r-2xl p-9 lg:w-full lg:rounded-b-2xl lg:rounded-t-none">
-          <AiOutlineStar style={{ fontSize: "4rem", marginBottom: "1rem" }} />
+          <PiBinoculars style={{ fontSize: "4rem", marginBottom: "1rem" }} />
           <h4 className="text-2xl mb-2">Lorem ipsum dolor sit amet</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

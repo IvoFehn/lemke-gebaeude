@@ -6,22 +6,22 @@ type Props = {};
 
 const testimonials: Testimonial[] = [
   {
-    img: { src: "/service-picture.jpg", height: 30, width: 30 },
-    quote: "Very cool! Nice price!",
-    name: "The Serial Killer",
-    role: "Superdude",
+    img: { src: "/profilePicture.png", height: 30, width: 30 },
+    quote: "Super reinigungsfirma tolles Team!!",
+    name: "Andreas Jung",
+    role: "Kleinunternehmer",
   },
   {
-    img: { src: "/service-picture.jpg", height: 30, width: 30 },
-    quote: "Nice service 10/10",
-    name: "The Serial Killer",
-    role: "Superdude",
+    img: { src: "/profilePicture.png", height: 30, width: 30 },
+    quote: "Top-Service durch nette Mitarbeiter.",
+    name: "Torsten Grunewald",
+    role: "Botaniker",
   },
   {
-    img: { src: "/service-picture.jpg", height: 30, width: 30 },
-    quote: "Always buy the service there.",
-    name: "The Serial Killer",
-    role: "Superdude",
+    img: { src: "/profilePicture.png", height: 30, width: 30 },
+    quote: "Mehr als sauber geht nicht und freundlich noch dazu. Danke.",
+    name: "Katharina Fenstermacher",
+    role: "Management",
   },
 ];
 
@@ -38,8 +38,8 @@ const TestimonialsComponent = (props: Props) => {
         ></Image>
       </div>
       <div className="text-colorPrimary flex justify-center items-center flex-col w-3/4 lg:pt-24 lg:text-center">
-        <h4 className="text-xl font-semibold">Out Test</h4>
-        <h2 className="text-6xl font-semibold mb-20">Our Client feedback</h2>
+        <h4 className="text-xl font-semibold">Tests</h4>
+        <h2 className="text-6xl font-semibold mb-20">Unser Kunden-Feedback</h2>
         <TestimonialSlider testimonials={testimonials} />
       </div>
     </section>

@@ -57,17 +57,22 @@ const AboutUs = (props: Props) => {
       <div className="basis-1/2 w-full h-full">
         <div className="lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
           <h6 className="text-colorSecondary text-xl font-semibold pb-3">
-            About us
+            Über uns
           </h6>
           <h2 className="text-colorSecondary text-6xl font-bold pb-2">
-            Our Success Cleaning Up Your Mess
+            Reinigungsexperten seit 10 Jahren
           </h2>
           <p className="text-colorText">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
+            Wir sind ein Langenhagener Familienunternehmen, bei dem die Wünsche
+            des Kunden immer fest im Blick stehen. Nach 25 Jahren
+            Berufserfahrung im Bereich Gebäudereinigung haben wir unser
+            Unternehmen im Jahr 2013 gegründet. Pünktlich, unkompliziert und
+            schnell erreichbar, sind wir im Notfall zeitnah zur Stelle. Unser
+            Anspruch ist es, Ihrem Anspruch gerecht zu werden, mit ehrlichen,
+            qualitätsorientierten und flexiblen Angeboten, natürlich verwenden
+            wir dabei modernste und qualitätsgeprüfte Reinigungsmittel. Die von
+            uns verwendeten Reinigungsprodukte tragen das Europäische
+            Umweltzeichen.
           </p>
         </div>
         <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
