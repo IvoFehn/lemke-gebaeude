@@ -91,7 +91,12 @@ const ContactForm = (props: Props) => {
       messageValidation: message.length < 500 && message.length > 20,
     }));
 
-    if (!allValid) {
+    console.log(allValid());
+
+    if (!allValid()) {
+      setShowErrorMessag(
+        `Nicht alle Felder korrekt ausgefüllt. Bitte ändern Sie die Eingaben und versuchen Sie es erneut. `
+      );
       return;
     }
     if (!formRef.current) {

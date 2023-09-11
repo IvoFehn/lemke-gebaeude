@@ -9,8 +9,8 @@ type Props = {};
 
 const ContactInfo = (props: Props) => {
   return (
-    <div className=" bg-colorPrimary min-h-min text-sm 2xl:px-[48rem] lg:hidden">
-      <ul className="list-none p-2 items-center gap-2 container mx-auto flex justify-end ">
+    <div className=" bg-colorPrimary min-h-min text-sm lg:hidden 4k:px-[20vw] xl:px-0 mx-auto">
+      <ul className="list-none py-2 items-center gap-2 flex justify-end">
         <li className="flex items-center gap-2">
           <AiFillPhone color="white" />
           <a href="tel:05117900900" className="no-underline">

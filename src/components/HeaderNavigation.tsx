@@ -14,9 +14,15 @@ const HeaderNavigation = (props: Props) => {
         className="m-3"
       />
       <ul className="list-none flex gap-6 text-colorSecondary font-bold lg:hidden">
-        <li className="flex items-center gap-2">Startseite</li>
-        <li className="flex items-center gap-2">Leistungen</li>
-        <li className="flex items-center gap-2">Über Uns</li>
+        <a href="#" className="flex items-center gap-2">
+          <li>Startseite</li>
+        </a>
+        <a href="#services" className="flex items-center gap-2">
+          <li>Leistungen</li>
+        </a>
+        <a href="#about" className="flex items-center gap-2">
+          <li>Über Uns</li>
+        </a>
       </ul>
     </div>
   );

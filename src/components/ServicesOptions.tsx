@@ -13,7 +13,10 @@ type Props = {};
 
 const ServicesOptions = (props: Props) => {
   return (
-    <div className="w-full flex justify-center items-center text-colorText flex-col">
+    <div
+      className="w-full flex justify-center items-center text-colorText flex-col"
+      id="services"
+    >
       <h6 className="text-colorSecondary text-xl font-bold pb-4 text-center">
         Unsere beliebtesten Services
       </h6>
@@ -36,9 +39,7 @@ const ServicesOptions = (props: Props) => {
             Hygiene wird bei uns nicht nur im Sanitärbereich großgeschrieben,
             aber hier besonders.
           </p>
-          <a href="#" className="text-colorPrimary hover:text-colorSecondary">
-            Learn more
-          </a>
+
           <div className="inner-card-div">
             <PiToiletLight
               style={{
@@ -64,9 +65,7 @@ const ServicesOptions = (props: Props) => {
           <p className="text-colorText pb-2 text-center">
             Sie feiern... ums Aufräumen kümmern wir uns.
           </p>
-          <a href="#" className="text-colorPrimary hover:text-colorSecondary">
-            Learn more
-          </a>
+
           <div className="inner-card-div">
             <PiChampagneDuotone
               style={{
@@ -92,9 +91,7 @@ const ServicesOptions = (props: Props) => {
           <p className="text-colorText pb-2 text-center">
             Wir kehren auch vor Ihrer Tür.
           </p>
-          <a href="#" className="text-colorPrimary hover:text-colorSecondary">
-            Learn more
-          </a>
+
           <div className="inner-card-div">
             <PiTreeBold
               style={{
@@ -120,9 +117,7 @@ const ServicesOptions = (props: Props) => {
           <p className="text-colorText pb-2 text-center">
             Unser Team ist bei Kleinreparaturen ganz groß.
           </p>
-          <a href="#" className="text-colorPrimary hover:text-colorSecondary">
-            Learn more
-          </a>
+
           <div className="inner-card-div">
             <PiHammerThin
               style={{
@@ -148,9 +143,7 @@ const ServicesOptions = (props: Props) => {
           <p className="text-colorText pb-2 text-center">
             Wischen, pflegen, erhalten – ganz nach Wunsch.
           </p>
-          <a href="#" className="text-colorPrimary hover:text-colorSecondary">
-            Learn more
-          </a>
+
           <div className="inner-card-div">
             <PiOfficeChair
               style={{
@@ -176,9 +169,7 @@ const ServicesOptions = (props: Props) => {
           <p className="text-colorText pb-2 text-center">
             Damit Sie den Durchblick behalten.
           </p>
-          <a href="#" className="text-colorPrimary hover:text-colorSecondary">
-            Learn more
-          </a>
+
           <div className="inner-card-div">
             <BiSprayCan
               style={{
