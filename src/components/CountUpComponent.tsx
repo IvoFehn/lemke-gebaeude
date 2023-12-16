@@ -3,6 +3,7 @@ import { CountUp } from "countup.js";
 
 type Props = {
   countUpTo: number;
+  additionalInformation?: string;
   styles?: string;
 };
 
@@ -32,7 +33,7 @@ const CountUpComponent = (props: Props) => {
   return (
     <>
       <h4 ref={countupRef} className={props.styles}>
-        0
+        0 <span>{props.additionalInformation}</span>
       </h4>
     </>
   );

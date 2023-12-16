@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import CountUpComponent from "./CountUpComponent";
-import { GiMagicBroom } from "react-icons/gi";
 import { ImEarth } from "react-icons/im";
 import { LiaIndustrySolid } from "react-icons/lia";
 import { colorPrimary } from "@/common/colors";
+import { FaClock } from "react-icons/fa";
+import { GiMagicBroom } from "react-icons/gi";
 
 type Props = {};
 
@@ -30,32 +31,35 @@ const AboutUs = (props: Props) => {
         >
           <div className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
-              countUpTo={560}
+              countUpTo={100}
+              additionalInformation="+"
               styles="text-xl  text-6xl font-bold text-colorText pb-2"
             />
-            <p className="font-semibold text-lg">Projects Completed</p>
+            <p className="font-semibold text-lg">Zufriedene Kunden</p>
           </div>
           <div className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
-              countUpTo={850}
+              countUpTo={25}
+              additionalInformation="+"
               styles="text-xl  text-6xl block font-bold text-colorText pb-2"
             />
-            <p className="font-semibold text-lg">Dedicated Cleaner</p>
+            <p className="font-semibold text-lg">Jahre Erfahrung</p>
           </div>
           <div className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
-              countUpTo={920}
+              countUpTo={100}
+              additionalInformation="%"
               styles="text-xl  text-6xl block font-bold text-colorText pb-2"
             />
-            <p className="font-semibold text-lg">Satisfied Customer</p>
+            <p className="font-semibold text-lg">Umweltbewusst</p>
           </div>
-          <div className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
+          {/* <div className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
               countUpTo={450}
               styles="text-xl text-6xl block font-bold text-colorText pb-2"
             />
             <p className="font-semibold text-lg">Certified Awards</p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="basis-1/2 w-full h-full">
@@ -94,6 +98,23 @@ const AboutUs = (props: Props) => {
           </p>
         </div>
         <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
+          <FaClock
+            style={{
+              fontSize: "4rem",
+              marginBottom: "1rem",
+              color: colorPrimary,
+            }}
+          />
+          <h4 className="text-colorSecondary text-xl font-semibold pb-2">
+            Perfektes Timing
+          </h4>
+          <p className="text-colorText pb-4">
+            Für die Werterhaltung Ihres Gebäudes bieten wir Ihnen tägliche,
+            wöchentliche, monatliche oder von Ihnen individuell gewählte
+            Zeitabschnitte an.
+          </p>
+        </div>
+        <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
           <GiMagicBroom
             style={{
               fontSize: "4rem",
@@ -102,33 +123,14 @@ const AboutUs = (props: Props) => {
             }}
           />
           <h4 className="text-colorSecondary text-xl font-semibold pb-2">
-            Commercial Cleaning
+            Umfassende Gebäudereinigung
           </h4>
           <p className="text-colorText pb-4">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
-          </p>
-        </div>
-        <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
-          <LiaIndustrySolid
-            style={{
-              fontSize: "4rem",
-              marginBottom: "1rem",
-              color: colorPrimary,
-            }}
-          />
-          <h4 className="text-colorSecondary text-xl font-semibold pb-2">
-            Industrail Cleaning
-          </h4>
-          <p className="text-colorText pb-4">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
+            Egal, ob als einmalige Grundreinigung oder als regelmäßiger Service,
+            unsere Expertise erstreckt sich auf die gründliche Pflege und
+            Reinigung von Bürokomplexen, Gewerbeimmobilien sowie Treppenhäusern.
+            Wir bieten umfassende Dienstleistungen, um eine makellose und
+            professionelle Umgebung sicherzustellen.
           </p>
         </div>
       </div>
