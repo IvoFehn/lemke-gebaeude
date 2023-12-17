@@ -35,7 +35,7 @@ const CountUpComponent = (props: Props) => {
       <h4 ref={countupRef} className={props.styles}>
         0
       </h4>
-      <h4> {props.additionalInformation}</h4>
+      <h4 className={props.styles}> {props.additionalInformation}</h4>
     </div>
   );
 };
