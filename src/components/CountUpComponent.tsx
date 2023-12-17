@@ -31,11 +31,12 @@ const CountUpComponent = (props: Props) => {
 
   // in the jsx use the ref attribute to bind the element to `countupRef`
   return (
-    <>
+    <div className="flex">
       <h4 ref={countupRef} className={props.styles}>
-        0 <span>{props.additionalInformation}</span>
+        0
       </h4>
-    </>
+      <h4> {props.additionalInformation}</h4>
+    </div>
   );
 };
 

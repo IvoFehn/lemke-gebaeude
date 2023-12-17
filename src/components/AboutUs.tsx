@@ -67,7 +67,7 @@ const AboutUs = (props: Props) => {
           <h6 className="text-colorSecondary text-xl font-semibold pb-3">
             Über uns
           </h6>
-          <h2 className="text-colorSecondary text-6xl font-bold pb-2">
+          <h2 className="text-colorSecondary text-6xl font-bold pb-2 break-words break-all">
             Reinigungsexperten seit 10 Jahren
           </h2>
           <p className="text-colorText">

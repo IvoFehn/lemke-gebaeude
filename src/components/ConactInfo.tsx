@@ -19,8 +19,8 @@ const ContactInfo = (props: Props) => {
         </li>
         <li className="flex items-center gap-2">
           <AiOutlineMail color="white" />
-          <a href="mailto:abc@example.com">
-            <span className="">abc@example.com</span>
+          <a href="mailto:info@lemke.de">
+            <span className="">info@lemke.de</span>
           </a>
         </li>
         <li className="flex items-center gap-2">

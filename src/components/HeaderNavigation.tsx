@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {};
 
@@ -14,15 +15,15 @@ const HeaderNavigation = (props: Props) => {
         className="m-3"
       />
       <ul className="list-none flex gap-6 text-colorSecondary font-bold lg:hidden">
-        <a href="#" className="flex items-center gap-2">
+        <Link href="/#" className="flex items-center gap-2">
           <li>Startseite</li>
-        </a>
-        <a href="#services" className="flex items-center gap-2">
-          <li>Leistungen</li>
-        </a>
-        <a href="#about" className="flex items-center gap-2">
+        </Link>
+        <Link href="/#about" className="flex items-center gap-2">
           <li>Über Uns</li>
-        </a>
+        </Link>
+        <Link href="/#services" className="flex items-center gap-2">
+          <li>Leistungen</li>
+        </Link>
       </ul>
     </div>
   );

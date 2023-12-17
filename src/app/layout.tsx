@@ -1,15 +1,10 @@
 "use client";
+import HeaderNavigation from "@/components/HeaderNavigation";
+import FooterComponent from "@/components/FooterComponent";
 import ContactInfo from "@/components/ConactInfo";
+
 import "./globals.css";
 // import type { Metadata } from "next";
-import HeaderNavigation from "@/components/HeaderNavigation";
-import HeroCarousel from "@/components/HeroCarousel";
-import ElementorComponent from "@/components/ElementorComponent";
-import AboutUs from "@/components/AboutUs";
-import ServicveHero from "@/components/ServiceHero";
-import ContactOptions from "@/components/ContactOptions";
-import TestimonialsComponent from "@/components/TestimonialsComponent";
-import FooterComponent from "@/components/FooterComponent";
 
 // export const metadata: Metadata = {
 //   title: "Lemke - Gebäudereinigung",
@@ -26,14 +21,7 @@ export default function RootLayout({
       <body className="text-white min-h-screen min-w-screen">
         <ContactInfo />
         <HeaderNavigation />
-        <HeroCarousel />
-        <section className="w-full h-full services__background">
-          <ElementorComponent />
-          <AboutUs />
-        </section>
-        <ServicveHero />
-        <TestimonialsComponent />
-        <ContactOptions />
+        {children}
         <FooterComponent />
       </body>
     </html>

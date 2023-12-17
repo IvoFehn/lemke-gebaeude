@@ -1,6 +1,7 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import ServicesOptions from "./ServicesOptions";
+import Link from "next/link";
 
 type Props = {};
 
@@ -14,10 +15,12 @@ const ServiceHero = (props: Props) => {
           <p className="pb-8 text-base">
             Nutze unser Karriereportal und entdecke unsere offenen Stellen.
           </p>
-          <button className="bg-colorPrimary p-5 rounded-xl flex justify-center items-center uppercase hover:brightness-125 transition-all duration-300">
-            <span className="pr-2">Zeige die Vakanzen</span>
-            <BsArrowRight />
-          </button>
+          <Link href="/career">
+            <button className="bg-colorPrimary p-5 rounded-xl flex justify-center items-center uppercase hover:brightness-125 transition-all duration-300">
+              <span className="pr-2">Zeige die Vakanzen</span>
+              <BsArrowRight />
+            </button>
+          </Link>
         </div>
       </div>
       {/* <div className="flex justify-center items-center ">
