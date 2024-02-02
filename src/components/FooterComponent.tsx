@@ -3,6 +3,7 @@ import React from "react";
 import { FiMail, FiPhone } from "react-icons/fi";
 import { CiLocationOn } from "react-icons/ci";
 import { BsFillHeartFill } from "react-icons/bs";
+import Link from "next/link";
 
 type Props = {};
 
@@ -35,6 +36,9 @@ const FooterComponent = (props: Props) => {
             <li>Über uns</li>
             <li>Kontakt</li>
             <li>Unser Service</li>
+            <li>
+              <Link href="/impressum">Impressum</Link>
+            </li>
           </ul>
         </div>
         <div className="basis-1/3">
