@@ -14,26 +14,28 @@ export type Job = {
 
 const jobs: Job[] = [
   {
-    title: "Wischmeister",
-    image: "/testImage.jpg",
-    description: "Testdescription",
-    url: "www.google.de",
-    altText: "Test",
+    title: "Gebäudereiniger (m/w/d)",
+    image: "/elevator_clean.webp",
+    description:
+      "Gebäudereiniger gesucht: Erfahrung erwünscht, Zuverlässigkeit und Sorgfalt erforderlich. Bieten faire Bezahlung, flexible Zeiten. Verstärken Sie unser Team! Bewerbungen jetzt willkommen.",
+    url: "",
+    altText: "A cleaning service cleans an elevator",
   },
   {
-    title: "Putzmeister",
-    image: "/testImage.jpg",
-    description: "Testdescription",
-    url: "www.google.de",
-    altText: "Test",
+    title: "Fensterreiniger (m/w/d)",
+    image: "/surface_clean.webp",
+    description:
+      "Engagierter Fensterputzer gesucht. Erfahrung in Gebäudereinigung von Vorteil. Wir bieten Sorgfalt, Zuverlässigkeit, faire Bezahlung, flexible Arbeitszeiten. Werden Sie Teil unseres Teams. Bewerben Sie sich jetzt!",
+    url: "",
+    altText: "A person cleans a surface with a sponge",
   },
-  {
-    title: "Reinigungsmeister",
-    image: "/testImage.jpg",
-    description: "Testdescription",
-    url: "www.google.de",
-    altText: "Test",
-  },
+  // {
+  //   title: "Reinigungsmeister",
+  //   image: "/vacuuming_carpet.webp",
+  //   description: "Testdescription",
+  //   url: "www.google.de",
+  //   altText: "Test",
+  // },
 ];
 
 const page = (props: Props) => {

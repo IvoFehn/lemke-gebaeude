@@ -30,10 +30,10 @@ const TestimonialsComponent = (props: Props) => {
     <section className="4k:px-[20vw] xl:px-0 shadow-sm border-colorBorderLightGrey border-solid border-2 rounded-3xl flex mt-3 lg:flex-col lg:items-center lg:justify-center lg:px-4 lg:border-none lg:shadow-none">
       <div className="p-3">
         <Image
-          src={"/service-picture.jpg"}
-          width={400}
+          src={"/fancy_room_cut.jpg"}
+          width={800}
           height={400}
-          alt="Testimonial Picture"
+          alt="A cleaned up fancy room"
           className="testimonial-image"
         ></Image>
       </div>

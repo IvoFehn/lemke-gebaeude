@@ -26,7 +26,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               <Image
                 className="embla__slide__img"
                 src={imageByIndex(index)}
-                alt="Your alt text"
+                alt="A hero picture related to cleaning"
               />
             </div>
           ))}

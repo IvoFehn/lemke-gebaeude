@@ -8,7 +8,7 @@ type Props = {};
 const ServiceHero = (props: Props) => {
   return (
     <div className="bg-colorBackgroundLightGrey pb-">
-      <div className="mb-16 bg-[url('/scroll-bg.jpg')] h-[600px] w-full rounded-b-[50%] lg:rounded-b-xl bg-fixed bg-no-repeat bg-center bg-cover relative">
+      <div className="mb-16 bg-[url('/window_cleaning.webp')] h-[600px] w-full rounded-b-[50%] lg:rounded-b-xl bg-fixed bg-no-repeat bg-center bg-cover relative">
         <div className="bg-colorPrimary opacity-60 h-[600px] w-full rounded-b-[50%] lg:rounded-b-xl"></div>
         <div className="w-full h-full text-white absolute top-0 left-0 z-10 flex items-center pt-32 flex-col lg:px-4 lg:text-center">
           <h2 className="text-4xl pb-8 font-bold">Karriere</h2>

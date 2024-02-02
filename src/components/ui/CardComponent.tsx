@@ -20,7 +20,7 @@ const CardComponent = (props: Job) => {
       <hr></hr>
       <h2 className="text-5xl p-4">{props.title}</h2>
       <p className="text-xl p-4">{props.description}</p>
-      <Link href="mailto:info@lemke.de" className="p-4">
+      <Link href="mailto:service@lemke-gebäudereinigung.de" className="p-4">
         <button className="border-2 rounded-2xl p-2 w-full bg-colorSecondary text-white">
           Hier bewerben!
         </button>

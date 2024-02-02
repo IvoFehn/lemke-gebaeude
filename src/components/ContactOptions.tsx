@@ -58,7 +58,7 @@ const ContactOptions = (props: Props) => {
                 <span className="text-colorPrimary text-xl font-semibold">
                   Mail
                 </span>
-                <span>info@lemke.com</span>
+                <span>service@lemke-gebäudereinigung.de</span>
               </div>
             </div>
           </a>

@@ -18,9 +18,9 @@ const AboutUs = (props: Props) => {
       <div className="basis-1/2 w-full">
         <div className="flex items-center justify-center lg:px-4">
           <Image
-            src="/service-picture.jpg"
+            src="/green_cleaning_chemicals_cut.jpg"
             alt="Some photo"
-            width="600"
+            width="800"
             height="900"
             className="border-solid rounded-xl border-white border-8 shadow-xl"
           ></Image>
@@ -67,7 +67,7 @@ const AboutUs = (props: Props) => {
           <h6 className="text-colorSecondary text-xl font-semibold pb-3">
             Über uns
           </h6>
-          <h2 className="text-colorSecondary text-6xl font-bold pb-2 break-words break-all">
+          <h2 className="text-colorSecondary text-5xl font-bold pb-2 break-words break-all text-wrap">
             Reinigungsexperten seit 10 Jahren
           </h2>
           <p className="text-colorText">

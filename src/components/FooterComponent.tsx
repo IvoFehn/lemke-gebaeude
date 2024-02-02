@@ -18,9 +18,12 @@ const FooterComponent = (props: Props) => {
             alt="Lemke Gebäudereinigung Logo"
             style={{ borderRadius: "2%" }}
           />
-          <a href="mailto:test@test.de" className="flex items-center gap-2">
+          <a
+            href="mailto:service@lemke-gebäudereinigung.de"
+            className="flex items-center gap-2"
+          >
             <FiMail />
-            test@test.de
+            service@lemke-gebäudereinigung.de
           </a>
           <a href="tel:05117900900" className="flex items-center gap-2">
             <FiPhone /> <span>0511 / 7-900-900</span>
