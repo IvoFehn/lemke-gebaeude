@@ -67,7 +67,7 @@ const page = (props: Props) => {
             Ihres Anliegens.
           </p>
 
-          <h2 class="text-3xl py-8">Speicherung und Sicherheit</h2>
+          <h2 className="text-3xl py-8">Speicherung und Sicherheit</h2>
           <p>
             Die über das Kontaktformular übermittelten Daten werden per E-Mail
             an uns gesendet und zur Bearbeitung Ihres Anliegens gespeichert. Wir
@@ -75,7 +75,7 @@ const page = (props: Props) => {
             Ihre Daten vor unbefugtem Zugriff geschützt sind.
           </p>
 
-          <h2 class="text-3xl py-8">Cookies und lokale Speicherung</h2>
+          <h2 className="text-3xl py-8">Cookies und lokale Speicherung</h2>
           <p>
             Wir verwenden keine Cookies auf unserer Webseite. Als Maßnahme gegen
             Spam wird lediglich ein Zeitstempel im Local Storage Ihres Browsers
@@ -83,7 +83,7 @@ const page = (props: Props) => {
             zu nutzen.
           </p>
 
-          <h2 class="text-3xl py-8">Datenübermittlung</h2>
+          <h2 className="text-3xl py-8">Datenübermittlung</h2>
           <p>
             Die Übermittlung Ihrer Daten erfolgt über das CDN von Netlify, um
             eine sichere und effiziente Bereitstellung unserer Website-Inhalte
@@ -91,7 +91,7 @@ const page = (props: Props) => {
             Dritte statt.
           </p>
 
-          <h2 class="text-3xl py-8">Ihre Rechte</h2>
+          <h2 className="text-3xl py-8">Ihre Rechte</h2>
           <p>
             Sie haben das Recht, Auskunft über Ihre bei uns gespeicherten
             personenbezogenen Daten, deren Herkunft, den Empfänger und den Zweck
@@ -101,7 +101,7 @@ const page = (props: Props) => {
             über die im Impressum angegebenen Kontaktdaten an uns wenden.
           </p>
 
-          <h2 class="text-3xl py-8">Kontakt für Datenschutzanfragen</h2>
+          <h2 className="text-3xl py-8">Kontakt für Datenschutzanfragen</h2>
           <p>
             Fragen zum Datenschutz richten Sie bitte an die im Impressum unserer
             Webseite hinterlegten Kontaktinformationen.
