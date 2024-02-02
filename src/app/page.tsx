@@ -5,18 +5,36 @@ import AboutUs from "@/components/AboutUs";
 import ServicveHero from "@/components/ServiceHero";
 import ContactOptions from "@/components/ContactOptions";
 import TestimonialsComponent from "@/components/TestimonialsComponent";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <main>
-      <HeroCarousel />
-      <section className="w-full h-full services__background">
-        <ElementorComponent />
-        <AboutUs />
-      </section>
-      <ServicveHero />
-      <TestimonialsComponent />
-      <ContactOptions />
-    </main>
+    <>
+      <Head>
+        <title>Lemke Gebäudereinigung</title>
+        <meta name="description" content="Gebäudereinigungsservice von Lemke" />
+        <meta
+          name="keywords"
+          content="Gebäudereinigung Hannover, Familie Lemke Reinigungsservice, professionelle Gebäudereinigung Lemke Hannover, Büroreinigung Hannover, Fensterreinigung Hannover, Unterhaltsreinigung Hannover, Treppenhausreinigung Lemke, Teppichreinigung Hannover, Desinfektionsdienste Hannover, umweltfreundliche Reinigung Hannover, Reinigungsfirma Hannover, Lemke Reinigungsunternehmen, Gebäudereinigung Dienstleistungen Hannover, zuverlässige Reinigungskraft Hannover, Hausmeisterservice Hannover Lemke"
+        />
+        <meta property="og:title" content="Lemke Gebäudereinigung" />
+        <meta
+          property="og:description"
+          content="Gebäudereinigungsservice von Lemke"
+        />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main>
+        <HeroCarousel />
+        <section className="w-full h-full services__background">
+          <ElementorComponent />
+          <AboutUs />
+        </section>
+        <ServicveHero />
+        <TestimonialsComponent />
+        <ContactOptions />
+      </main>
+    </>
   );
 }
