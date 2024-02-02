@@ -91,8 +91,6 @@ const ContactForm = (props: Props) => {
       messageValidation: message.length < 500 && message.length > 20,
     }));
 
-    console.log(allValid());
-
     if (!allValid()) {
       setShowErrorMessag(
         `Nicht alle Felder korrekt ausgefüllt. Bitte ändern Sie die Eingaben und versuchen Sie es erneut. `
@@ -104,10 +102,10 @@ const ContactForm = (props: Props) => {
     }
     emailjs
       .sendForm(
-        "service_ikxquun",
-        "template_b3fmqwz",
+        "service_69d6mdd",
+        "template_1koqmbd",
         formRef.current,
-        "TGE-_gU4y31-X3Quq"
+        "j9j2jl6meqprpx-7b"
       )
       .then(
         (result) => {
@@ -118,6 +116,7 @@ const ContactForm = (props: Props) => {
           });
           localStorage.setItem("blockMessage", storageStingifyItem);
           setButtonMessage("Nachricht versendet");
+          setShowErrorMessag(`Nachricht wurde erfolgreich versendet `);
         },
         (error) => {
           setButtonMessage("Error");
