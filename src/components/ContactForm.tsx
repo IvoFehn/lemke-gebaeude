@@ -205,8 +205,8 @@ const ContactForm = (props: Props) => {
       )}
       {state.showBanner && (
         <span className="text-white text-sm">
-          Sie können das Formular nicht nutzen, solange Sie die Cookies nicht
-          akzeptiert haben.
+          Das Formular steht zur Nutzung erst zur Verfügung, nachdem die Cookies
+          akzeptiert worden sind.
         </span>
       )}
     </form>
