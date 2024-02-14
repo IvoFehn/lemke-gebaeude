@@ -4,6 +4,7 @@ import FooterComponent from "@/components/FooterComponent";
 import ContactInfo from "@/components/ConactInfo";
 
 import "./globals.css";
+import { ConsentCookieProvider } from "@/context/ConsentCookieContext";
 // import type { Metadata } from "next";
 
 // export const metadata: Metadata = {
@@ -19,10 +20,12 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body className="text-white min-h-screen min-w-screen">
-        <ContactInfo />
-        <HeaderNavigation />
-        {children}
-        <FooterComponent />
+        <ConsentCookieProvider>
+          <ContactInfo />
+          <HeaderNavigation />
+          {children}
+          <FooterComponent />
+        </ConsentCookieProvider>
       </body>
     </html>
   );

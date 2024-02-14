@@ -8,3 +8,4 @@ export const colorAccent = "#90C824";
 export const colorElementor = "#56A3CF";
 export const colorBackgroundLightGrey = "#FBFBFB";
 export const colorBorderLightGrey = "#f5f5f5";
+export const colorDisabledLightGrey = "#d3d3d3";

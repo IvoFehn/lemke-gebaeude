@@ -38,6 +38,7 @@ module.exports = {
       colorElementor: colors.colorElementor,
       colorBackgroundLightGrey: colors.colorBackgroundLightGrey,
       colorBorderLightGrey: colors.colorBorderLightGrey,
+      colorDisabledLightGrey: colors.colorDisabledLightGrey,
     },
     extend: {
       backgroundImage: {
