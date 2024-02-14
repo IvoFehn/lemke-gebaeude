@@ -3,6 +3,7 @@
 import React, { FormEvent, useEffect, useRef, useState } from "react";
 import isValidEmail from "@/utils/emailValidate";
 import emailjs from "@emailjs/browser";
+import { useConsentCookie } from "@/context/ConsentCookieContext";
 
 const checkLocalStorage = (blockMessage: string | null = null) => {
   if (blockMessage) {
@@ -19,10 +20,14 @@ const checkLocalStorage = (blockMessage: string | null = null) => {
   }
 };
 
-type Props = {};
+type Props = {
+  consent: boolean;
+};
 
 const ContactForm = (props: Props) => {
   const formRef = useRef<HTMLFormElement | null>(null);
+  const { state, dispatch } = useConsentCookie();
+
   const [validations, setValidations] = React.useState({
     fullnameValidation: false,
     phone_noValidation: false,
@@ -133,53 +138,76 @@ const ContactForm = (props: Props) => {
       ref={formRef}
     >
       <input
+        disabled={state.showBanner}
         type="text"
         name="fullname"
         id="fullname"
         placeholder="Name"
         maxLength={100}
-        className={`text-colorText rounded-tl-2xl rounded-br-2xl p-3 w-full ${
+        className={`text-colorText rounded-tl-2xl ${
+          !state.showBanner ? "" : "bg-colorDisabledLightGrey"
+        } rounded-br-2xl p-3 w-full ${
           !validations.fullnameValidation && "border-2 border-red-500"
         }`}
       />
       <input
+        disabled={state.showBanner}
         type="number"
         name="phone_no"
         id="phone_no"
         placeholder="Telefonnummer"
         maxLength={13}
-        className={`text-colorText rounded-tl-2xl rounded-br-2xl p-3 w-full ${
+        className={`text-colorText rounded-tl-2xl ${
+          !state.showBanner ? "" : "bg-colorDisabledLightGrey"
+        } rounded-br-2xl p-3 w-full ${
           !validations.phone_noValidation && "border-2 border-red-500"
         }`}
       />
       <input
+        disabled={state.showBanner}
         type="text"
         name="email"
         id="email"
         placeholder="Email"
         maxLength={100}
-        className={`text-colorText rounded-tl-2xl rounded-br-2xl p-3 w-full ${
+        className={`text-colorText rounded-tl-2xl ${
+          !state.showBanner ? "" : "bg-colorDisabledLightGrey"
+        } rounded-br-2xl p-3 w-full ${
           !validations.emailValidation && "border-2 border-red-500"
         }`}
       />
       <textarea
+        disabled={state.showBanner}
         id="message"
         name="message"
         rows={5}
         minLength={20}
         maxLength={500}
         placeholder="Nachricht"
-        className={`text-colorText rounded-tl-2xl rounded-br-2xl p-3 w-full ${
+        className={`text-colorText rounded-tl-2xl ${
+          !state.showBanner ? "" : "bg-colorDisabledLightGrey"
+        } rounded-br-2xl p-3 w-full ${
           !validations.messageValidation && "border-2 border-red-500"
         }`}
       ></textarea>
       <input
+        disabled={state.showBanner}
         type="submit"
         value={buttonMessage.toUpperCase()}
-        className="bg-colorPrimary w-64 p-3 mt-3 rounded-2xl cursor-pointer hover:bg-white hover:text-colorPrimary font-semibold transition duration-500 ease-in-out"
+        className={`bg-colorPrimary w-64 p-3 mt-3 rounded-2xl font-semibold  ${
+          !state.showBanner
+            ? "cursor-pointer hover:bg-white hover:text-colorPrimary  transition duration-500 ease-in-out"
+            : "bg-colorDisabledLightGrey"
+        } `}
       ></input>
       {showErrorMessage && (
         <span className="text-white text-sm">{showErrorMessage}</span>
+      )}
+      {state.showBanner && (
+        <span className="text-white text-sm">
+          Sie können das Formular nicht nutzen, solange Sie die Cookies nicht
+          akzeptiert haben.
+        </span>
       )}
     </form>
   );

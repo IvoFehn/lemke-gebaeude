@@ -6,6 +6,9 @@ import ServicveHero from "@/components/ServiceHero";
 import ContactOptions from "@/components/ContactOptions";
 import TestimonialsComponent from "@/components/TestimonialsComponent";
 import Head from "next/head";
+import CookieConsentBanner from "@/components/CookieBanner";
+import { getCookie } from "cookies-next";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   return (
@@ -34,6 +37,7 @@ export default function Home() {
         <ServicveHero />
         <TestimonialsComponent />
         <ContactOptions />
+        <CookieConsentBanner />
       </main>
     </>
   );
