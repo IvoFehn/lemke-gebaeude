@@ -64,7 +64,7 @@ const ContactOptions = (props: Props) => {
           </a>
         </div>
         <div className="basis-1/2 w-full lg:flex lg:justify-center lg:items-center">
-          <ContactForm />
+          <ContactForm consent={true} />
         </div>
       </div>
     </section>
