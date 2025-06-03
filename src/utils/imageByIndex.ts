@@ -6,6 +6,6 @@ import image3 from "../../public/meta_spray_into_camera.webp";
 export const images: StaticImageData[] = [image1, image2, image3];
 
 const imageByIndex = (index: number): StaticImageData =>
-  images[index % images.toString().length];
+  images[index % images.length];
 
 export default imageByIndex;
