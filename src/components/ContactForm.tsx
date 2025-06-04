@@ -138,7 +138,7 @@ const ContactForm = (props: Props) => {
       ref={formRef}
       aria-label="Kontaktformular"
     >
-      <label htmlFor="fullname" className="w-full text-left text-colorText">
+      <label htmlFor="fullname" className="w-full text-left text-white">
         Name
       </label>
       <input
@@ -155,7 +155,7 @@ const ContactForm = (props: Props) => {
           !validations.fullnameValidation && "border-2 border-red-500"
         }`}
       />
-      <label htmlFor="phone_no" className="w-full text-left text-colorText">
+      <label htmlFor="phone_no" className="w-full text-left text-white">
         Telefonnummer
       </label>
       <input
@@ -172,7 +172,7 @@ const ContactForm = (props: Props) => {
           !validations.phone_noValidation && "border-2 border-red-500"
         }`}
       />
-      <label htmlFor="email" className="w-full text-left text-colorText">
+      <label htmlFor="email" className="w-full text-left text-white">
         E-Mail
       </label>
       <input
@@ -189,7 +189,7 @@ const ContactForm = (props: Props) => {
           !validations.emailValidation && "border-2 border-red-500"
         }`}
       />
-      <label htmlFor="message" className="w-full text-left text-colorText">
+      <label htmlFor="message" className="w-full text-left text-white">
         Nachricht
       </label>
       <textarea
