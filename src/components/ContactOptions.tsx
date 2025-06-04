@@ -1,4 +1,3 @@
-import { colorText } from "@/common/colors";
 import React from "react";
 import { FiPhoneCall, FiMail } from "react-icons/fi";
 import ContactForm from "./ContactForm";
@@ -27,11 +26,7 @@ const ContactOptions = (props: Props) => {
                 <div>
                   <FiPhoneCall
                     aria-hidden="true"
-                    style={{
-                      fontSize: "4rem",
-                      color: colorText,
-                      marginRight: "2rem",
-                    }}
+                    className="text-[4rem] text-colorText mr-8"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -52,13 +47,9 @@ const ContactOptions = (props: Props) => {
                 <div>
                   <FiMail
                     aria-hidden="true"
-                    style={{
-                      fontSize: "4rem",
-                    color: colorText,
-                    marginRight: "2rem",
-                  }}
-                />
-              </div>
+                    className="text-[4rem] text-colorText mr-8"
+                  />
+                </div>
               <div className="flex flex-col">
                   <span className="text-colorPrimary text-xl font-semibold">
                     Mail

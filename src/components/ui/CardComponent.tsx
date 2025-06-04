@@ -12,9 +12,8 @@ const CardComponent = (props: Job) => {
           width={0}
           height={0}
           sizes="100%"
-          style={{ width: "100%", height: "auto" }} // optional
+          className="w-full h-auto rounded-t-2xl"
           alt={props.altText}
-          className="rounded-t-2xl"
         />
       </div>
       <hr></hr>

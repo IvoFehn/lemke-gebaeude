@@ -1,4 +1,3 @@
-import { colorPrimary, colorText } from "@/common/colors";
 import React from "react";
 import {
   PiToiletLight,
@@ -24,14 +23,8 @@ const ServicesOptions = (props: Props) => {
         Reinigung auf jedem Gebiet
       </h2>
       <div className="overflow-hidden flex flex-wrap lg:flex-col gap-12 justify-center items-center pt-8 pb-32 ">
-        <article className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
-          <PiToiletLight
-            style={{
-              fontSize: "4rem",
-              marginBottom: "1rem",
-              color: colorPrimary,
-            }}
-          />
+        <article className="group shadow-lg w-full max-w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 relative overflow-hidden">
+          <PiToiletLight className="mb-4 text-[4rem] text-colorPrimary" />
           <h3 className="text-colorSecondary text-2xl font-semibold pb-2">
             Sanitäranlagen Reinigung
           </h3>
@@ -39,146 +32,68 @@ const ServicesOptions = (props: Props) => {
             Hygiene wird bei uns nicht nur im Sanitärbereich großgeschrieben,
             aber hier besonders.
           </p>
-
-          <div className="inner-card-div">
-            <PiToiletLight
-              style={{
-                fontSize: "8rem",
-                marginBottom: "1rem",
-                color: colorText,
-                opacity: "50%",
-              }}
-            />
+          <div className="absolute bottom-0 right-0 transform translate-y-20 opacity-0 transition-all duration-200 group-hover:translate-y-12 group-hover:opacity-60">
+            <PiToiletLight className="mb-4 text-[8rem] text-colorText" />
           </div>
         </article>
-        <article className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
-          <PiChampagneDuotone
-            style={{
-              fontSize: "4rem",
-              marginBottom: "1rem",
-              color: colorPrimary,
-            }}
-          />
+        <article className="group shadow-lg w-full max-w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 relative overflow-hidden">
+          <PiChampagneDuotone className="mb-4 text-[4rem] text-colorPrimary" />
           <h3 className="text-colorSecondary text-2xl font-semibold pb-2">
             Eventreinigung
           </h3>
           <p className="text-colorText pb-2 text-center">
             Sie feiern... ums Aufräumen kümmern wir uns.
           </p>
-
-          <div className="inner-card-div">
-            <PiChampagneDuotone
-              style={{
-                fontSize: "8rem",
-                marginBottom: "1rem",
-                color: colorText,
-                opacity: "50%",
-              }}
-            />
+          <div className="absolute bottom-0 right-0 transform translate-y-20 opacity-0 transition-all duration-200 group-hover:translate-y-12 group-hover:opacity-60">
+            <PiChampagneDuotone className="mb-4 text-[8rem] text-colorText" />
           </div>
         </article>
-        <article className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
-          <PiTreeBold
-            style={{
-              fontSize: "4rem",
-              marginBottom: "1rem",
-              color: colorPrimary,
-            }}
-          />
+        <article className="group shadow-lg w-full max-w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 relative overflow-hidden">
+          <PiTreeBold className="mb-4 text-[4rem] text-colorPrimary" />
           <h3 className="text-colorSecondary text-2xl font-semibold pb-2">
             Aussenbereichreinigung
           </h3>
           <p className="text-colorText pb-2 text-center">
             Wir kehren auch vor Ihrer Tür.
           </p>
-
-          <div className="inner-card-div">
-            <PiTreeBold
-              style={{
-                fontSize: "8rem",
-                marginBottom: "1rem",
-                color: colorText,
-                opacity: "50%",
-              }}
-            />
+          <div className="absolute bottom-0 right-0 transform translate-y-20 opacity-0 transition-all duration-200 group-hover:translate-y-12 group-hover:opacity-60">
+            <PiTreeBold className="mb-4 text-[8rem] text-colorText" />
           </div>
         </article>
-        <article className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
-          <PiHammerThin
-            style={{
-              fontSize: "4rem",
-              marginBottom: "1rem",
-              color: colorPrimary,
-            }}
-          />
+        <article className="group shadow-lg w-full max-w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 relative overflow-hidden">
+          <PiHammerThin className="mb-4 text-[4rem] text-colorPrimary" />
           <h3 className="text-colorSecondary text-2xl font-semibold pb-2">
             Kleinreparaturen
           </h3>
           <p className="text-colorText pb-2 text-center">
             Unser Team ist bei Kleinreparaturen ganz groß.
           </p>
-
-          <div className="inner-card-div">
-            <PiHammerThin
-              style={{
-                fontSize: "8rem",
-                marginBottom: "1rem",
-                color: colorText,
-                opacity: "50%",
-              }}
-            />
+          <div className="absolute bottom-0 right-0 transform translate-y-20 opacity-0 transition-all duration-200 group-hover:translate-y-12 group-hover:opacity-60">
+            <PiHammerThin className="mb-4 text-[8rem] text-colorText" />
           </div>
         </article>
-        <article className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
-          <PiOfficeChair
-            style={{
-              fontSize: "4rem",
-              marginBottom: "1rem",
-              color: colorPrimary,
-            }}
-          />
+        <article className="group shadow-lg w-full max-w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 relative overflow-hidden">
+          <PiOfficeChair className="mb-4 text-[4rem] text-colorPrimary" />
           <h3 className="text-colorSecondary text-2xl font-semibold pb-2">
             Büroreinigung
           </h3>
           <p className="text-colorText pb-2 text-center">
             Wischen, pflegen, erhalten – ganz nach Wunsch.
           </p>
-
-          <div className="inner-card-div">
-            <PiOfficeChair
-              style={{
-                fontSize: "8rem",
-                marginBottom: "1rem",
-                color: colorText,
-                opacity: "50%",
-              }}
-            />
+          <div className="absolute bottom-0 right-0 transform translate-y-20 opacity-0 transition-all duration-200 group-hover:translate-y-12 group-hover:opacity-60">
+            <PiOfficeChair className="mb-4 text-[8rem] text-colorText" />
           </div>
         </article>
-        <article className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
-          <BiSprayCan
-            style={{
-              fontSize: "4rem",
-              marginBottom: "1rem",
-              color: colorPrimary,
-            }}
-          />
+        <article className="group shadow-lg w-full max-w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 relative overflow-hidden">
+          <BiSprayCan className="mb-4 text-[4rem] text-colorPrimary" />
           <h3 className="text-colorSecondary text-2xl font-semibold pb-2">
             Fensterreinigung
           </h3>
           <p className="text-colorText pb-2 text-center">
             Damit Sie den Durchblick behalten.
           </p>
-
-          <div className="inner-card-div">
-            <BiSprayCan
-              style={{
-                fontSize: "8rem",
-                marginBottom: "1rem",
-                color: colorText,
-                opacity: "50%",
-              }}
-            />
+          <div className="absolute bottom-0 right-0 transform translate-y-20 opacity-0 transition-all duration-200 group-hover:translate-y-12 group-hover:opacity-60">
+            <BiSprayCan className="mb-4 text-[8rem] text-colorText" />
           </div>
         </article>
       </div>

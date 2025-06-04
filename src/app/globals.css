@@ -22,29 +22,6 @@ html {
   );
 }
 
-/* Styles für die äußere Div */
-.outer-card-div {
-  position: relative;
-
-  overflow: hidden;
-}
-
-/* Styles für die innere Div */
-.inner-card-div {
-  transform: translateY(5rem);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  opacity: 0%;
-  transition: ease-in-out;
-  transition-duration: 200ms;
-}
-
-/* Styles für die innere Div, wenn die äußere Div gehovert wird */
-.outer-card-div:hover .inner-card-div {
-  transform: translateY(3rem);
-  opacity: 60%;
-}
 
 .testimonial-image {
   border-top-left-radius: 1rem;
