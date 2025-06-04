@@ -70,12 +70,23 @@ const FooterComponent = (props: Props) => {
           </ul>
         </div>
       </div>
-      <div className="4k:px-[20vw] xl:px-0 mx-auto flex items-center justify-end rounded-md">
+      <div className="4k:px-[20vw] xl:px-0 mx-auto flex items-center justify-center py-4">
         <a
-          className="flex p-5 underline hover:text-colorText"
+          className="flex items-center gap-1 px-4 py-2 rounded-full bg-colorSecondaryDarker hover:bg-[#222] transition-all duration-300 group shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           href="https://github.com/IvoFehn"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Made <BsFillHeartFill className="mx-1 text-red-600" /> by Ivo Fehn
+          <span className="opacity-90 group-hover:opacity-100 transition-opacity">
+            Made with
+          </span>
+          <BsFillHeartFill className="mx-1 text-red-500 group-hover:text-red-400 group-hover:scale-110 transition-all duration-300 animate-pulse" />
+          <span className="opacity-90 group-hover:opacity-100 transition-opacity">
+            by Ivo Fehn
+          </span>
+          <span className="ml-2 opacity-70 group-hover:opacity-100 transition-opacity">
+            ❯
+          </span>
         </a>
       </div>
     </footer>
