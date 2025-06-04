@@ -24,13 +24,10 @@ export default function TestimonialsSlider({
   useEffect(() => {
     if (!autorotate) return;
     const interval = setInterval(() => {
-      setActive(
-        active + 1 === testimonials.length ? 0 : (active) => active + 1
-      );
+      setActive((prev) => (prev + 1 === testimonials.length ? 0 : prev + 1));
     }, autorotateTiming);
     return () => clearInterval(interval);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [active, autorotate]);
+  }, [autorotate, testimonials.length]);
 
   const heightFix = () => {
     if (testimonialsRef.current && testimonialsRef.current.parentElement)
@@ -39,7 +36,7 @@ export default function TestimonialsSlider({
 
   useEffect(() => {
     heightFix();
-  }, []);
+  }, [active]);
 
   return (
     <div className="w-full max-w-3xl mx-auto text-center">
