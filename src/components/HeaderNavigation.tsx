@@ -31,6 +31,16 @@ const HeaderNavigation = (props: Props) => {
               Leistungen
             </Link>
           </li>
+          <li>
+            <Link href="/career" className="flex items-center gap-2">
+              Karriere
+            </Link>
+          </li>
+          <li>
+            <Link href="/impressum" className="flex items-center gap-2">
+              Impressum
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
