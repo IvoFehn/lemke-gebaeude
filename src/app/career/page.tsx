@@ -1,4 +1,3 @@
-"use client";
 import CardComponent from "@/components/ui/CardComponent";
 import React from "react";
 import type { Metadata } from "next";
