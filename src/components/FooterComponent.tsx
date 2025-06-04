@@ -51,16 +51,21 @@ const FooterComponent = (props: Props) => {
           <h4 className="border-b-2 mb-4 pb-2 text-xl">Partnerschaften</h4>
           <ul className=" flex gap-2 flex-col">
             <li className="flex items-center gap-2">
-              <div className="w-12 h-12 bg-colorPrimary text-white flex items-center justify-center rounded-sm">
-                P1
-              </div>
-              <span>Partner 1</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <div className="w-12 h-12 bg-colorPrimary text-white flex items-center justify-center rounded-sm">
-                P2
-              </div>
-              <span>Partner 2</span>
+              <Image
+                src="/dataline-logo.png"
+                width={45}
+                height={45}
+                alt="Dataline Logo"
+                className="rounded-sm"
+              />
+              <a
+                href="https://dataline.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-colorText"
+              >
+                Dataline
+              </a>
             </li>
           </ul>
         </div>
@@ -70,8 +75,7 @@ const FooterComponent = (props: Props) => {
           className="flex p-5 underline hover:text-colorText"
           href="https://github.com/IvoFehn"
         >
-          Made <BsFillHeartFill className="mx-1 text-red-600" /> by{" "}
-          Ivo Fehn
+          Made <BsFillHeartFill className="mx-1 text-red-600" /> by Ivo Fehn
         </a>
       </div>
     </footer>
