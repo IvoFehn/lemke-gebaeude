@@ -6,7 +6,7 @@ type Props = {};
 
 const ContactOptions = (props: Props) => {
   return (
-    <section className="4k:px-[20vw] xl:px-0 mx-auto mb-16">
+    <section id="contact" className="4k:px-[20vw] xl:px-0 mx-auto mb-16">
       <div className="text-colorPrimary flex justify-center items-center flex-col pb-12 pt-16 lg:flex-col lg: text-center">
         <h4 className="text-2xl font-semibold text-colorSecondary">
           Beratungstermin vereinbaren
