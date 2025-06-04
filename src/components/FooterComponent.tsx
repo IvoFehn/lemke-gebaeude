@@ -33,9 +33,12 @@ const FooterComponent = (props: Props) => {
         <nav aria-label="Footer" className="basis-1/3 flex gap-4 flex-col">
           <h4 className="border-b-2 mb-4 pb-2 text-xl">Quick Links</h4>
           <ul className=" flex gap-2 flex-col">
-            <li>Über uns</li>
-            <li>Kontakt</li>
-            <li>Unser Service</li>
+            <li>
+              <Link href="/#about">Über uns</Link>
+            </li>
+            <li>
+              <Link href="/#contact">Kontakt</Link>
+            </li>
             <li>
               <Link href="/impressum">Impressum</Link>
             </li>
@@ -45,14 +48,20 @@ const FooterComponent = (props: Props) => {
           </ul>
         </nav>
         <div className="basis-1/3">
-          <h4 className="border-b-2 mb-4 pb-2 text-xl">Unser Service</h4>
+          <h4 className="border-b-2 mb-4 pb-2 text-xl">Partnerschaften</h4>
           <ul className=" flex gap-2 flex-col">
-            <li>Sanitäranlagen </li>
-            <li>Büro</li>
-            <li>Aussenbereich</li>
-            <li>Kleinreparaturen</li>
-            <li>Fenster </li>
-            <li>Events</li>
+            <li className="flex items-center gap-2">
+              <div className="w-12 h-12 bg-colorPrimary text-white flex items-center justify-center rounded-sm">
+                P1
+              </div>
+              <span>Partner 1</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <div className="w-12 h-12 bg-colorPrimary text-white flex items-center justify-center rounded-sm">
+                P2
+              </div>
+              <span>Partner 2</span>
+            </li>
           </ul>
         </div>
       </div>
