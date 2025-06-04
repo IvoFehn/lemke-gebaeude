@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import { setCookie, getCookie } from "cookies-next";
 import { useConsentCookie } from "@/context/ConsentCookieContext";
