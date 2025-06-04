@@ -25,6 +25,7 @@ const ContactOptions = (props: Props) => {
             <div className="flex items-center w-full">
               <div>
                 <FiPhoneCall
+                  aria-hidden="true"
                   style={{
                     fontSize: "4rem",
                     color: colorText,
@@ -47,6 +48,7 @@ const ContactOptions = (props: Props) => {
             <div className="flex items-center w-full">
               <div>
                 <FiMail
+                  aria-hidden="true"
                   style={{
                     fontSize: "4rem",
                     color: colorText,

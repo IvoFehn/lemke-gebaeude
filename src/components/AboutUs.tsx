@@ -19,7 +19,7 @@ const AboutUs = (props: Props) => {
         <div className="flex items-center justify-center lg:px-4">
           <Image
             src="/green_cleaning_chemicals_cut.jpg"
-            alt="Some photo"
+            alt="Umweltfreundliche Reinigungsmittel"
             width="800"
             height="900"
             className="border-solid rounded-xl border-white border-8 shadow-xl"

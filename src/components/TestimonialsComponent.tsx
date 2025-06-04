@@ -33,7 +33,7 @@ const TestimonialsComponent = (props: Props) => {
           src={"/fancy_room_cut.jpg"}
           width={800}
           height={400}
-          alt="A cleaned up fancy room"
+          alt="Ein luxuriös gereinigter Raum"
           className="testimonial-image"
         ></Image>
       </div>

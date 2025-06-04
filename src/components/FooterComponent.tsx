@@ -16,7 +16,7 @@ const FooterComponent = (props: Props) => {
             src={"/lemke-logo.jpg"}
             width={250}
             height={250}
-            alt="Lemke Gebäudereinigung Logo"
+            alt="Logo der Lemke Gebäudereinigung"
             style={{ borderRadius: "2%" }}
           />
           <a
