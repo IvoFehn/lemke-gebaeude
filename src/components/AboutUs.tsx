@@ -2,8 +2,6 @@ import React from "react";
 import Image from "next/image";
 import CountUpComponent from "./CountUpComponent";
 import { ImEarth } from "react-icons/im";
-import { LiaIndustrySolid } from "react-icons/lia";
-import { colorPrimary } from "@/common/colors";
 import { FaClock } from "react-icons/fa";
 import { GiMagicBroom } from "react-icons/gi";
 
@@ -79,13 +77,7 @@ const AboutUs = (props: Props) => {
           </p>
         </div>
         <article className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
-          <ImEarth
-            style={{
-              fontSize: "4rem",
-              marginBottom: "1rem",
-              color: colorPrimary,
-            }}
-          />
+          <ImEarth className="mb-4 text-[4rem] text-colorPrimary" />
           <h4 className="text-colorSecondary text-xl font-semibold pb-2">
             Für die Umwelt
           </h4>
@@ -98,13 +90,7 @@ const AboutUs = (props: Props) => {
           </p>
         </article>
         <article className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
-          <FaClock
-            style={{
-              fontSize: "4rem",
-              marginBottom: "1rem",
-              color: colorPrimary,
-            }}
-          />
+          <FaClock className="mb-4 text-[4rem] text-colorPrimary" />
           <h4 className="text-colorSecondary text-xl font-semibold pb-2">
             Perfektes Timing
           </h4>
@@ -115,13 +101,7 @@ const AboutUs = (props: Props) => {
           </p>
         </article>
         <article className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
-          <GiMagicBroom
-            style={{
-              fontSize: "4rem",
-              marginBottom: "1rem",
-              color: colorPrimary,
-            }}
-          />
+          <GiMagicBroom className="mb-4 text-[4rem] text-colorPrimary" />
           <h4 className="text-colorSecondary text-xl font-semibold pb-2">
             Umfassende Gebäudereinigung
           </h4>

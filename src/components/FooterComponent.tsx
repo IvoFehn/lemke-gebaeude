@@ -17,7 +17,7 @@ const FooterComponent = (props: Props) => {
             width={250}
             height={250}
             alt="Logo der Lemke Gebäudereinigung"
-            style={{ borderRadius: "2%" }}
+            className="rounded-sm"
           />
           <a
             href="mailto:service@lemke-gebäudereinigung.de"
@@ -58,7 +58,7 @@ const FooterComponent = (props: Props) => {
           className="flex p-5 underline hover:text-colorText"
           href="https://github.com/IvoFehn"
         >
-          Made <BsFillHeartFill className="mx-1" style={{ color: "red" }} /> by{" "}
+          Made <BsFillHeartFill className="mx-1 text-red-600" /> by{" "}
           Ivo Fehn
         </a>
       </div>
