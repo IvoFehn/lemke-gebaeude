@@ -2,6 +2,7 @@ import CardComponent from "@/components/ui/CardComponent";
 import React from "react";
 import type { Metadata } from "next";
 
+
 export const metadata: Metadata = {
   title: "Karriere - Lemke Gebäudereinigung",
   description: "Offene Stellen bei Lemke Gebäudereinigung",
@@ -63,6 +64,23 @@ const page = (props: Props) => {
           );
         })}
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            jobs.map((job) => ({
+              '@context': 'https://schema.org',
+              '@type': 'JobPosting',
+              title: job.title,
+              description: job.description,
+              hiringOrganization: {
+                '@type': 'Organization',
+                name: 'Lemke Gebäudereinigung',
+              },
+            }))
+          ),
+        }}
+      />
     </div>
   );
 };

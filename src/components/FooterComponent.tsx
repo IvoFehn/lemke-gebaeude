@@ -39,6 +39,9 @@ const FooterComponent = (props: Props) => {
             <li>
               <Link href="/impressum">Impressum</Link>
             </li>
+            <li>
+              <Link href="/career">Karriere</Link>
+            </li>
           </ul>
         </nav>
         <div className="basis-1/3">
