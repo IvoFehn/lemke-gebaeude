@@ -1,4 +1,12 @@
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Impressum - Lemke Gebäudereinigung",
+  description: "Rechtliche Hinweise und Kontaktinformationen",
+  robots: { index: true, follow: true },
+  alternates: { canonical: "https://lemke-gebaeudereinigung.de/impressum" },
+};
 
 type Props = {};
 

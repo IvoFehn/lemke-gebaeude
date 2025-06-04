@@ -2,7 +2,7 @@
 import React from "react";
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import imageByIndex from "../utils/imageByIndex";
+import imageByIndex, { altTextByIndex } from "../utils/imageByIndex";
 import Image from "next/image";
 
 type PropType = {
@@ -26,7 +26,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               <Image
                 className="embla__slide__img"
                 src={imageByIndex(index)}
-                alt="A hero picture related to cleaning"
+                alt={altTextByIndex(index)}
               />
             </div>
           ))}

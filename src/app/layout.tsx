@@ -20,10 +20,16 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body className="text-white min-h-screen min-w-screen">
+        <a
+          href="#main-content"
+          className="skip-link sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white text-black p-2 rounded"
+        >
+          Zum Inhalt springen
+        </a>
         <ConsentCookieProvider>
           <ContactInfo />
           <HeaderNavigation />
-          {children}
+          <div id="main-content">{children}</div>
           <FooterComponent />
         </ConsentCookieProvider>
       </body>

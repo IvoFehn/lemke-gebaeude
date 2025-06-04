@@ -1,6 +1,14 @@
 "use client";
 import CardComponent from "@/components/ui/CardComponent";
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Karriere - Lemke Gebäudereinigung",
+  description: "Offene Stellen bei Lemke Gebäudereinigung",
+  robots: { index: true, follow: true },
+  alternates: { canonical: "https://lemke-gebaeudereinigung.de/career" },
+};
 
 type Props = {};
 
