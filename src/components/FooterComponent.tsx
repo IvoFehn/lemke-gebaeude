@@ -11,7 +11,7 @@ const FooterComponent = (props: Props) => {
   return (
     <footer className=" bg-colorSecondary">
       <div className="4k:px-[20vw] xl:px-0 flex text-white pt-32 pb-16 gap-8 lg:flex-col lg:px-16 lg:justify-center">
-        <div className="basis-1/3 flex gap-4 flex-col">
+        <address className="basis-1/3 flex gap-4 flex-col not-italic">
           <Image
             src={"/lemke-logo.jpg"}
             width={250}
@@ -29,8 +29,8 @@ const FooterComponent = (props: Props) => {
           <a href="tel:05117900900" className="flex items-center gap-2">
             <FiPhone /> <span>0511 / 7-900-900</span>
           </a>
-        </div>
-        <div className="basis-1/3 flex gap-4 flex-col">
+        </address>
+        <nav aria-label="Footer" className="basis-1/3 flex gap-4 flex-col">
           <h4 className="border-b-2 mb-4 pb-2 text-xl">Quick Links</h4>
           <ul className=" flex gap-2 flex-col">
             <li>Über uns</li>
@@ -40,7 +40,7 @@ const FooterComponent = (props: Props) => {
               <Link href="/impressum">Impressum</Link>
             </li>
           </ul>
-        </div>
+        </nav>
         <div className="basis-1/3">
           <h4 className="border-b-2 mb-4 pb-2 text-xl">Unser Service</h4>
           <ul className=" flex gap-2 flex-col">

@@ -28,15 +28,16 @@ const testimonials: Testimonial[] = [
 const TestimonialsComponent = (props: Props) => {
   return (
     <section className="4k:px-[20vw] xl:px-0 shadow-sm border-colorBorderLightGrey border-solid border-2 rounded-3xl flex mt-3 lg:flex-col lg:items-center lg:justify-center lg:px-4 lg:border-none lg:shadow-none">
-      <div className="p-3">
+      <figure className="p-3">
         <Image
           src={"/fancy_room_cut.jpg"}
           width={800}
           height={400}
           alt="Ein luxuriös gereinigter Raum"
           className="testimonial-image"
-        ></Image>
-      </div>
+        />
+        <figcaption className="sr-only">Ein luxuriös gereinigter Raum</figcaption>
+      </figure>
       <div className="text-colorPrimary flex justify-center items-center flex-col w-3/4 lg:pt-24 lg:text-center">
         <h4 className="text-xl font-semibold">Tests</h4>
         <h2 className="text-6xl font-semibold mb-20">Unser Kunden-Feedback</h2>

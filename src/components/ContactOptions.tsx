@@ -18,52 +18,56 @@ const ContactOptions = (props: Props) => {
       </div>
       <div className="flex gap-6 lg:flex-col">
         <div className="basis-1/2 flex gap-8 flex-col justify-center items-end lg:items-center lg:gap-4">
-          <a
-            href="tel:05117900900"
-            className="text-colorText border-colorBorderLightGrey border-solid border-2 flex p-5 rounded-2xl shadow-md w-3/4"
-          >
-            <div className="flex items-center w-full">
-              <div>
-                <FiPhoneCall
-                  aria-hidden="true"
-                  style={{
-                    fontSize: "4rem",
+          <address className="not-italic w-full flex justify-end lg:justify-center">
+            <a
+              href="tel:05117900900"
+              className="text-colorText border-colorBorderLightGrey border-solid border-2 flex p-5 rounded-2xl shadow-md w-3/4"
+            >
+              <div className="flex items-center w-full">
+                <div>
+                  <FiPhoneCall
+                    aria-hidden="true"
+                    style={{
+                      fontSize: "4rem",
+                      color: colorText,
+                      marginRight: "2rem",
+                    }}
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-colorPrimary text-xl font-semibold">
+                    Phone
+                  </span>
+                  <span>(+49)511 / 7 900 900</span>
+                </div>
+              </div>
+            </a>
+          </address>
+          <address className="not-italic w-full flex justify-end lg:justify-center">
+            <a
+              href="mailto:info@lemke.com"
+              className="text-colorText border-colorBorderLightGrey border-solid border-2 flex p-5 rounded-2xl shadow-md w-3/4"
+            >
+              <div className="flex items-center w-full">
+                <div>
+                  <FiMail
+                    aria-hidden="true"
+                    style={{
+                      fontSize: "4rem",
                     color: colorText,
                     marginRight: "2rem",
                   }}
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-colorPrimary text-xl font-semibold">
-                  Phone
-                </span>
-                <span>(+49)511 / 7 900 900</span>
+                  <span className="text-colorPrimary text-xl font-semibold">
+                    Mail
+                  </span>
+                  <span>service@lemke-gebäudereinigung.de</span>
+                </div>
               </div>
-            </div>
-          </a>
-          <a
-            href="mailto:info@lemke.com"
-            className="text-colorText border-colorBorderLightGrey border-solid border-2 flex p-5 rounded-2xl shadow-md w-3/4"
-          >
-            <div className="flex items-center w-full">
-              <div>
-                <FiMail
-                  aria-hidden="true"
-                  style={{
-                    fontSize: "4rem",
-                    color: colorText,
-                    marginRight: "2rem",
-                  }}
-                />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-colorPrimary text-xl font-semibold">
-                  Mail
-                </span>
-                <span>service@lemke-gebäudereinigung.de</span>
-              </div>
-            </div>
-          </a>
+            </a>
+          </address>
         </div>
         <div className="basis-1/2 w-full lg:flex lg:justify-center lg:items-center">
           <ContactForm consent={true} />
