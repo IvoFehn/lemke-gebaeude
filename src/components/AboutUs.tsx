@@ -11,48 +11,48 @@ type Props = {};
 
 const AboutUs = (props: Props) => {
   return (
-    <div
+    <section
       className="mt-5 4k:px-[20vw] xl:px-0 mx-auto flex lg:flex-col gap-12"
       id="about"
     >
       <div className="basis-1/2 w-full">
-        <div className="flex items-center justify-center lg:px-4">
+        <figure className="flex items-center justify-center lg:px-4">
           <Image
             src="/green_cleaning_chemicals_cut.jpg"
-            alt="Some photo"
+            alt="Umweltfreundliche Reinigungsmittel"
             width="800"
             height="900"
             className="border-solid rounded-xl border-white border-8 shadow-xl"
-          ></Image>
-        </div>
+          />
+        </figure>
         <div
           id="countup-component"
           className="grid grid-cols-2 text-colorSecondary gap-4 4k:-translate-y-32 4k:p-12 lg:-translate-y-12 lg:py-0 lg:px-2"
         >
-          <div className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
+          <article className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
               countUpTo={100}
               additionalInformation="+"
               styles="text-xl  text-6xl font-bold text-colorText pb-2"
             />
             <p className="font-semibold text-lg">Zufriedene Kunden</p>
-          </div>
-          <div className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
+          </article>
+          <article className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
               countUpTo={25}
               additionalInformation="+"
               styles="text-xl  text-6xl block font-bold text-colorText pb-2"
             />
             <p className="font-semibold text-lg">Jahre Erfahrung</p>
-          </div>
-          <div className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
+          </article>
+          <article className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
               countUpTo={100}
               additionalInformation="%"
               styles="text-xl  text-6xl block font-bold text-colorText pb-2"
             />
             <p className="font-semibold text-lg">Umweltbewusst</p>
-          </div>
+          </article>
           {/* <div className="flex flex-col items-center justify-center lg:text-center bg-white shadow-lg rounded-xl p-4">
             <CountUpComponent
               countUpTo={450}
@@ -78,7 +78,7 @@ const AboutUs = (props: Props) => {
             schnell erreichbar, sind wir im Notfall zeitnah zur Stelle.
           </p>
         </div>
-        <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
+        <article className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
           <ImEarth
             style={{
               fontSize: "4rem",
@@ -96,8 +96,8 @@ const AboutUs = (props: Props) => {
             Reinigungsmittel. Die von uns verwendeten Reinigungsprodukte tragen
             das Europäische Umweltzeichen.
           </p>
-        </div>
-        <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
+        </article>
+        <article className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
           <FaClock
             style={{
               fontSize: "4rem",
@@ -113,8 +113,8 @@ const AboutUs = (props: Props) => {
             wöchentliche, monatliche oder von Ihnen individuell gewählte
             Zeitabschnitte an.
           </p>
-        </div>
-        <div className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
+        </article>
+        <article className="border-b-2 border-dotted pb-2 border-colorText pt-6 lg:flex lg:justify-center lg:items-center lg:flex-col lg:px-4 lg:text-center">
           <GiMagicBroom
             style={{
               fontSize: "4rem",
@@ -132,9 +132,9 @@ const AboutUs = (props: Props) => {
             Wir bieten umfassende Dienstleistungen, um eine makellose und
             professionelle Umgebung sicherzustellen.
           </p>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 };
 

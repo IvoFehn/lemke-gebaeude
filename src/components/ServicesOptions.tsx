@@ -13,7 +13,7 @@ type Props = {};
 
 const ServicesOptions = (props: Props) => {
   return (
-    <div
+    <section
       className="w-full flex justify-center items-center text-colorText flex-col"
       id="services"
     >
@@ -24,7 +24,7 @@ const ServicesOptions = (props: Props) => {
         Reinigung auf jedem Gebiet
       </h2>
       <div className="overflow-hidden flex flex-wrap lg:flex-col gap-12 justify-center items-center pt-8 pb-32 ">
-        <div className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
+        <article className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
           <PiToiletLight
             style={{
               fontSize: "4rem",
@@ -50,8 +50,8 @@ const ServicesOptions = (props: Props) => {
               }}
             />
           </div>
-        </div>
-        <div className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
+        </article>
+        <article className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
           <PiChampagneDuotone
             style={{
               fontSize: "4rem",
@@ -76,8 +76,8 @@ const ServicesOptions = (props: Props) => {
               }}
             />
           </div>
-        </div>
-        <div className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
+        </article>
+        <article className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
           <PiTreeBold
             style={{
               fontSize: "4rem",
@@ -102,8 +102,8 @@ const ServicesOptions = (props: Props) => {
               }}
             />
           </div>
-        </div>
-        <div className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
+        </article>
+        <article className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
           <PiHammerThin
             style={{
               fontSize: "4rem",
@@ -128,8 +128,8 @@ const ServicesOptions = (props: Props) => {
               }}
             />
           </div>
-        </div>
-        <div className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
+        </article>
+        <article className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
           <PiOfficeChair
             style={{
               fontSize: "4rem",
@@ -154,8 +154,8 @@ const ServicesOptions = (props: Props) => {
               }}
             />
           </div>
-        </div>
-        <div className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
+        </article>
+        <article className="shadow-lg w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 outer-card-div">
           <BiSprayCan
             style={{
               fontSize: "4rem",
@@ -180,9 +180,9 @@ const ServicesOptions = (props: Props) => {
               }}
             />
           </div>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 };
 

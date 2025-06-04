@@ -136,7 +136,11 @@ const ContactForm = (props: Props) => {
         submitHandler(e);
       }}
       ref={formRef}
+      aria-label="Kontaktformular"
     >
+      <label htmlFor="fullname" className="w-full text-left text-colorText">
+        Name
+      </label>
       <input
         disabled={state.showBanner}
         type="text"
@@ -144,38 +148,50 @@ const ContactForm = (props: Props) => {
         id="fullname"
         placeholder="Name"
         maxLength={100}
+        aria-required="true"
         className={`text-colorText rounded-tl-2xl ${
           !state.showBanner ? "" : "bg-colorDisabledLightGrey"
         } rounded-br-2xl p-3 w-full ${
           !validations.fullnameValidation && "border-2 border-red-500"
         }`}
       />
+      <label htmlFor="phone_no" className="w-full text-left text-colorText">
+        Telefonnummer
+      </label>
       <input
         disabled={state.showBanner}
-        type="number"
+        type="tel"
         name="phone_no"
         id="phone_no"
         placeholder="Telefonnummer"
         maxLength={13}
+        aria-required="true"
         className={`text-colorText rounded-tl-2xl ${
           !state.showBanner ? "" : "bg-colorDisabledLightGrey"
         } rounded-br-2xl p-3 w-full ${
           !validations.phone_noValidation && "border-2 border-red-500"
         }`}
       />
+      <label htmlFor="email" className="w-full text-left text-colorText">
+        E-Mail
+      </label>
       <input
         disabled={state.showBanner}
-        type="text"
+        type="email"
         name="email"
         id="email"
         placeholder="Email"
         maxLength={100}
+        aria-required="true"
         className={`text-colorText rounded-tl-2xl ${
           !state.showBanner ? "" : "bg-colorDisabledLightGrey"
         } rounded-br-2xl p-3 w-full ${
           !validations.emailValidation && "border-2 border-red-500"
         }`}
       />
+      <label htmlFor="message" className="w-full text-left text-colorText">
+        Nachricht
+      </label>
       <textarea
         disabled={state.showBanner}
         id="message"
@@ -184,6 +200,7 @@ const ContactForm = (props: Props) => {
         minLength={20}
         maxLength={500}
         placeholder="Nachricht"
+        aria-required="true"
         className={`text-colorText rounded-tl-2xl ${
           !state.showBanner ? "" : "bg-colorDisabledLightGrey"
         } rounded-br-2xl p-3 w-full ${
