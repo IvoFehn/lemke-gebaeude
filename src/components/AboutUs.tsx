@@ -66,7 +66,7 @@ const AboutUs = (props: Props) => {
             Über uns
           </h6>
           <h2 className="text-colorSecondary text-5xl font-bold pb-2 break-words">
-            Reinigungs&shy;experten seit 10 Jahren
+            Ein starkes Team seit 2013
           </h2>
           <p className="text-colorText">
             Wir sind ein Langenhagener Familienunternehmen, bei dem die Wünsche
