@@ -34,13 +34,13 @@ export default function Home() {
             name: 'Lemke Gebäudereinigung',
             address: {
               '@type': 'PostalAddress',
-              streetAddress: 'Karl-Kellner-Str.',
+              streetAddress: 'Karl-Kellner-Str. 59',
               addressLocality: 'Hannover',
               postalCode: '30853',
               addressCountry: 'DE',
             },
             telephone: '+49 511 7-900-900',
-            email: 'service@lemke-geb\u00e4udereinigung.de',
+            email: 'service@lemke-gebaeudereinigung.de',
           }),
         }}
       />

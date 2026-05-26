@@ -25,7 +25,7 @@ const ServicesOptions = (props: Props) => {
       <div className="overflow-hidden flex flex-wrap lg:flex-col gap-12 justify-center items-center pt-8 pb-32 ">
         <article className="group shadow-lg w-full max-w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 relative overflow-hidden">
           <PiToiletLight className="mb-4 text-[4rem] text-colorPrimary" />
-          <h3 className="text-colorSecondary text-2xl font-semibold pb-2">
+          <h3 className="text-colorSecondary text-2xl font-semibold pb-2 text-center">
             Sanitäranlagen Reinigung
           </h3>
           <p className="text-colorText pb-2 text-center">
@@ -38,7 +38,7 @@ const ServicesOptions = (props: Props) => {
         </article>
         <article className="group shadow-lg w-full max-w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 relative overflow-hidden">
           <PiChampagneDuotone className="mb-4 text-[4rem] text-colorPrimary" />
-          <h3 className="text-colorSecondary text-2xl font-semibold pb-2">
+          <h3 className="text-colorSecondary text-2xl font-semibold pb-2 text-center">
             Eventreinigung
           </h3>
           <p className="text-colorText pb-2 text-center">
@@ -50,7 +50,7 @@ const ServicesOptions = (props: Props) => {
         </article>
         <article className="group shadow-lg w-full max-w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 relative overflow-hidden">
           <PiTreeBold className="mb-4 text-[4rem] text-colorPrimary" />
-          <h3 className="text-colorSecondary text-2xl font-semibold pb-2">
+          <h3 className="text-colorSecondary text-2xl font-semibold pb-2 text-center">
             Aussenbereichreinigung
           </h3>
           <p className="text-colorText pb-2 text-center">
@@ -62,7 +62,7 @@ const ServicesOptions = (props: Props) => {
         </article>
         <article className="group shadow-lg w-full max-w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 relative overflow-hidden">
           <PiHammerThin className="mb-4 text-[4rem] text-colorPrimary" />
-          <h3 className="text-colorSecondary text-2xl font-semibold pb-2">
+          <h3 className="text-colorSecondary text-2xl font-semibold pb-2 text-center">
             Kleinreparaturen
           </h3>
           <p className="text-colorText pb-2 text-center">
@@ -74,7 +74,7 @@ const ServicesOptions = (props: Props) => {
         </article>
         <article className="group shadow-lg w-full max-w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 relative overflow-hidden">
           <PiOfficeChair className="mb-4 text-[4rem] text-colorPrimary" />
-          <h3 className="text-colorSecondary text-2xl font-semibold pb-2">
+          <h3 className="text-colorSecondary text-2xl font-semibold pb-2 text-center">
             Büroreinigung
           </h3>
           <p className="text-colorText pb-2 text-center">
@@ -86,7 +86,7 @@ const ServicesOptions = (props: Props) => {
         </article>
         <article className="group shadow-lg w-full max-w-[300px] h-[300px] basis-1/4 flex flex-col justify-center items-center p-8 rounded-3xl border-colorBorderLightGrey border-solid border-2 relative overflow-hidden">
           <BiSprayCan className="mb-4 text-[4rem] text-colorPrimary" />
-          <h3 className="text-colorSecondary text-2xl font-semibold pb-2">
+          <h3 className="text-colorSecondary text-2xl font-semibold pb-2 text-center">
             Fensterreinigung
           </h3>
           <p className="text-colorText pb-2 text-center">

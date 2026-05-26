@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Karriere - Lemke Gebäudereinigung",
+  title: "Karriere",
   description: "Offene Stellen bei Lemke Gebäudereinigung",
   robots: { index: true, follow: true },
   alternates: { canonical: "https://lemke-gebaeudereinigung.de/career" },

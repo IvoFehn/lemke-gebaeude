@@ -19,8 +19,8 @@ const ContactInfo = (props: Props) => {
         </li>
         <li className="flex items-center gap-2">
           <AiOutlineMail color="white" aria-hidden="true" />
-          <a href="mailto:service@lemke-gebäudereinigung.de">
-            <span>service@lemke-gebäudereinigung.de</span>
+          <a href="mailto:service@lemke-gebaeudereinigung.de">
+            <span>service@lemke-gebaeudereinigung.de</span>
           </a>
         </li>
         <li className="flex items-center gap-2">

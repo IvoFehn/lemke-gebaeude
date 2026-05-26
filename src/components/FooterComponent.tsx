@@ -20,11 +20,11 @@ const FooterComponent = (props: Props) => {
             className="rounded-sm"
           />
           <a
-            href="mailto:service@lemke-gebäudereinigung.de"
+            href="mailto:service@lemke-gebaeudereinigung.de"
             className="flex items-center gap-2"
           >
             <FiMail />
-            service@lemke-gebäudereinigung.de
+            service@lemke-gebaeudereinigung.de
           </a>
           <a href="tel:05117900900" className="flex items-center gap-2">
             <FiPhone /> <span>0511 / 7-900-900</span>

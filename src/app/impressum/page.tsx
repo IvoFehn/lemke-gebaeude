@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Impressum - Lemke Gebäudereinigung",
+  title: "Impressum",
   description: "Rechtliche Hinweise und Kontaktinformationen",
   robots: { index: true, follow: true },
   alternates: { canonical: "https://lemke-gebaeudereinigung.de/impressum" },
@@ -22,7 +22,7 @@ const page = (props: Props) => {
             <strong>Name des Unternehmens:</strong> Lemke Gebäudereinigung
           </p>
           <p>
-            <strong>Adresse:</strong> Karl-Kellner-Str., 30853 Hannover
+            <strong>Adresse:</strong> Karl-Kellner-Str. 59, 30853 Hannover
           </p>
           <p>
             <strong>Telefon:</strong>{" "}
@@ -30,12 +30,15 @@ const page = (props: Props) => {
           </p>
           <p>
             <strong>E-Mail:</strong>{" "}
-            <a href="mailto:service@lemke-gebäudereinigung.de">
-              service@lemke-gebäudereinigung.de
+            <a href="mailto:service@lemke-gebaeudereinigung.de">
+              service@lemke-gebaeudereinigung.de
             </a>
           </p>
           <p>
             <strong>Geschäftsführer:</strong> Wolfgang Lemke
+          </p>
+          <p>
+            <strong>Steuernummer:</strong> DE401064520
           </p>
         </section>
         {/* <section aria-labelledby="register-legal">
@@ -85,10 +88,11 @@ const page = (props: Props) => {
 
           <h2 className="text-3xl py-8">Cookies und lokale Speicherung</h2>
           <p>
-            Wir verwenden keine Cookies auf unserer Webseite. Als Maßnahme gegen
-            Spam wird lediglich ein Zeitstempel im Local Storage Ihres Browsers
-            gespeichert, der es ermöglicht, das Kontaktformular nur jede Stunde
-            zu nutzen.
+            Wir setzen ausschließlich ein technisch notwendiges Cookie
+            („userConsent") ein, um Ihre Zustimmung zu diesem Hinweis zu
+            speichern. Darüber hinaus wird als Maßnahme gegen Spam ein
+            Zeitstempel im Local Storage Ihres Browsers gespeichert, der es
+            ermöglicht, das Kontaktformular nur jede Stunde zu nutzen.
           </p>
 
           <h2 className="text-3xl py-8">Datenübermittlung</h2>

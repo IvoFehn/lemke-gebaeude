@@ -40,7 +40,7 @@ const ContactOptions = (props: Props) => {
           </address>
           <address className="not-italic w-full flex justify-end lg:justify-center">
             <a
-              href="mailto:info@lemke.com"
+              href="mailto:service@lemke-gebaeudereinigung.de"
               className="text-colorText border-colorBorderLightGrey border-solid border-2 flex p-5 rounded-2xl shadow-md w-3/4"
             >
               <div className="flex items-center w-full">
@@ -54,7 +54,7 @@ const ContactOptions = (props: Props) => {
                   <span className="text-colorPrimary text-xl font-semibold">
                     Mail
                   </span>
-                  <span>service@lemke-gebäudereinigung.de</span>
+                  <span>service@lemke-gebaeudereinigung.de</span>
                 </div>
               </div>
             </a>
